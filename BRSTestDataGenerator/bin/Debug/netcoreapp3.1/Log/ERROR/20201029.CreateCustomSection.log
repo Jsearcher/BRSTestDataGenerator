@@ -1,0 +1,11 @@
+10:35:51.126 ERROR - An error occurred creating the configuration section handler for AppConfigSetting: Could not load file or assembly 'BRSTestDataGenerator, Culture=neutral, PublicKeyToken=null'. 系統找不到指定的檔案。 (D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Debug\netcoreapp3.1\ASI.ICT.BRSTestDataGenerator.dll.config line 4)    at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.ConfigurationSectionCollection.Get(String name)
+   at System.Configuration.ConfigurationSectionCollection.get_Item(String name)
+   at BRSTestDataGenerator.ConfigScript.AppConfig.AppPropertySetting.GetPropSection(String pSectionName) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppConfig.cs:line 330
+   at Lib.Misc.Property.XMLPropertyBase.PropertySetting`1.GetPropSection()
+   at BRSTestDataGenerator.ConfigScript.AppConfig.AppPropertySetting.CreateCustomSection() in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppConfig.cs:line 429
+Could not load file or assembly 'BRSTestDataGenerator, Culture=neutral, PublicKeyToken=null'. 系統找不到指定的檔案。    at System.Configuration.TypeUtil.GetType(IInternalConfigHost host, String typeString, Boolean throwOnError)
+   at System.Configuration.MgmtConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)
+   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRootDeclaredHere)
+

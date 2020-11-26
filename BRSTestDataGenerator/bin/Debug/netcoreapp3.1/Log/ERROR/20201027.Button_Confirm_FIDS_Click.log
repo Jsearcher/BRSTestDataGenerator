@@ -1,0 +1,4 @@
+16:09:29.505 ERROR - String '20201027' was not recognized as a valid DateTime.    at System.DateTime.ParseExact(String s, String format, IFormatProvider provider)
+   at BRSTestDataGenerator.DAO.FIDS2Day.SelectByKey(String pFlightNo, String pDate) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\DAO\FIDS2Day.cs:line 222
+   at BRSTestDataGenerator.MainForm.AddNewTestFIDS(Row newRow) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\Form1.cs:line 136
+

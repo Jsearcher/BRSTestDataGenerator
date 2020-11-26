@@ -1,0 +1,26 @@
+10:41:46.483 ERROR - Test data of flight needs to be added before the one of BSM does.
+10:43:40.188 ERROR - INSERT 陳述式中的資料行數量小於 VALUES 子句中所指定的值。在 VALUES 子句中值的數量必須和 INSERT 陳述式中所指定的資料行數量相符。    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Lib.DB.DBRecord.Execute(String pSqlStr)
+   at BRSTestDataGenerator.DAO.BSM2Day.SetRecord(String pSqlStr, Object pObj) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\DAO\BSM2Day.cs:line 221
+   at Lib.DB.DBRecord.Insert(Object pItem)
+   at BRSTestDataGenerator.MainForm.AddNewTestBSM(Int32 dataNumber) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\MainForm.cs:line 410
+
+10:50:25.680 ERROR - 違反 PRIMARY KEY 條件約束 'PK_BSM_2DAY'。無法在物件 'brsdba.BSM_2DAY' 中插入重複的索引鍵。重複的索引鍵值是 (7890069052, 20201022)。
+陳述式已經結束。    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Lib.DB.DBRecord.Execute(String pSqlStr)
+   at BRSTestDataGenerator.DAO.BSM2Day.SetRecord(String pSqlStr, Object pObj) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\DAO\BSM2Day.cs:line 221
+   at Lib.DB.DBRecord.Insert(Object pItem)
+   at BRSTestDataGenerator.MainForm.AddNewTestBSM(Int32 dataNumber) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\MainForm.cs:line 410
+

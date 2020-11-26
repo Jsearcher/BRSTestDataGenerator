@@ -1,0 +1,17 @@
+{
+  "runtimeOptions": {
+    "tfm": "netcoreapp3.1",
+    "framework": {
+      "name": "Microsoft.WindowsDesktop.App",
+      "version": "3.1.9"
+    },
+    "additionalProbingPaths": [
+      "C:\\Users\\c8015\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\c8015\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "configProperties": {
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

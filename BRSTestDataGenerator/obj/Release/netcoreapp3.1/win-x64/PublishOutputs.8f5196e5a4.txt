@@ -1,0 +1,3 @@
+D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Release\netcoreapp3.1\publish\production\appsettings.json
+D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Release\netcoreapp3.1\publish\production\ASI.ICT.BRSTestDataGenerator.pdb
+D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Release\netcoreapp3.1\publish\production\ASI.ICT.BRSTestDataGenerator.exe

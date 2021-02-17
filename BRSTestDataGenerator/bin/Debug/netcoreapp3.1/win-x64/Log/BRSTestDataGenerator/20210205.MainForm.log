@@ -1,0 +1,441 @@
+08:34:19.871 INFO  - MainForm of [BRS Test Data Generator] initialized.
+08:34:20.950 INFO  - Query FIDS data successfully.
+08:34:21.005 INFO  - Query BSM data successfully.
+08:35:33.686 INFO  - MainForm of [BRS Test Data Generator] Closed.
+09:05:03.888 INFO  - MainForm of [BRS Test Data Generator] initialized.
+09:05:04.419 INFO  - Query FIDS data successfully.
+09:05:04.442 INFO  - Query BSM data successfully.
+09:05:24.066 INFO  - MainForm of [BRS Test Data Generator] Closed.
+09:11:06.609 INFO  - MainForm of [BRS Test Data Generator] initialized.
+09:11:07.182 INFO  - Query FIDS data successfully.
+09:11:07.203 INFO  - Query BSM data successfully.
+09:11:10.705 INFO  - Query FIDS data [XX0001] successfully.
+09:11:14.925 INFO  - Query FIDS data [XX0002] successfully.
+09:11:15.680 INFO  - Query FIDS data [XX0003] successfully.
+09:11:16.830 INFO  - Query FIDS data [XX0002] successfully.
+09:11:17.166 INFO  - Query FIDS data [XX0001] successfully.
+09:11:18.205 INFO  - Query FIDS data [XX0003] successfully.
+09:11:19.334 INFO  - Query FIDS data [XX0002] successfully.
+09:11:19.917 INFO  - Query FIDS data [XX0001] successfully.
+09:11:24.826 INFO  - MainForm of [BRS Test Data Generator] Closed.
+11:35:43.694 INFO  - MainForm of [BRS Test Data Generator] initialized.
+11:35:44.218 INFO  - Query FIDS data successfully.
+11:35:44.244 INFO  - Query BSM data successfully.
+11:35:47.748 INFO  - Query FIDS data of [XX0001] successfully.
+11:35:48.395 INFO  - Query FIDS data of [XX0002] successfully.
+11:35:48.759 INFO  - Query FIDS data of [XX0003] successfully.
+11:35:49.018 INFO  - Query FIDS data of [XX0003] successfully.
+11:35:49.362 INFO  - Query FIDS data of [XX0002] successfully.
+11:35:49.627 INFO  - Query FIDS data of [XX0001] successfully.
+11:35:50.029 INFO  - Query FIDS data of [XX0002] successfully.
+11:35:50.319 INFO  - Query FIDS data of [XX0003] successfully.
+11:35:50.573 INFO  - Query FIDS data of [XX0002] successfully.
+11:35:50.844 INFO  - Query FIDS data of [XX0001] successfully.
+11:35:56.866 INFO  - Query FIDS data of [XX0003] successfully.
+11:35:58.051 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:36:00.483 INFO  - Not to do this FIDS deletion.
+11:36:26.857 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:36:28.158 INFO  - Sure to do this FIDS deletion.
+11:36:28.177 INFO  - Start to delete selected FIDS test data.
+11:36:28.424 INFO  - Delete a test data of flight: XX0004 successfully.
+11:36:28.440 INFO  - The selected FIDS test data: XX0003 has been deleted.
+11:36:28.455 INFO  - Query FIDS data successfully.
+11:36:28.467 INFO  - Query BSM data successfully.
+11:36:32.978 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:33.391 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:33.678 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:33.952 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:34.193 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:34.445 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:34.740 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:34.977 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:35.283 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:35.585 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:36.378 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:36.863 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:37.461 INFO  - Query FIDS data of [XX0002] successfully.
+11:36:38.131 INFO  - Query FIDS data of [XX0001] successfully.
+11:36:56.765 INFO  - Query FIDS data successfully.
+11:36:56.777 INFO  - Query BSM data successfully.
+11:39:57.309 INFO  - MainForm of [BRS Test Data Generator] Closed.
+11:40:37.982 INFO  - MainForm of [BRS Test Data Generator] initialized.
+11:40:38.592 INFO  - Query FIDS data successfully.
+11:40:38.614 INFO  - Query BSM data successfully.
+11:41:20.378 INFO  - Query FIDS data of [XX0001] successfully.
+11:41:24.450 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:41:26.605 INFO  - Sure to do this FIDS deletion.
+11:41:26.632 INFO  - Start to delete selected FIDS test data.
+11:41:26.678 INFO  - Delete a test data of flight: XX0004 successfully.
+11:41:26.688 INFO  - The selected FIDS test data: XX0001 has been deleted.
+11:41:26.702 INFO  - Query FIDS data successfully.
+11:41:26.718 INFO  - Query BSM data successfully.
+11:42:22.691 INFO  - Query FIDS data successfully.
+11:42:22.703 INFO  - Query BSM data successfully.
+11:42:36.912 INFO  - Query FIDS data of [XX0003] successfully.
+11:42:37.382 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:37.720 INFO  - Query FIDS data of [XX0001] successfully.
+11:42:38.448 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:38.719 INFO  - Query FIDS data of [XX0003] successfully.
+11:42:39.037 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:39.388 INFO  - Query FIDS data of [XX0001] successfully.
+11:42:40.405 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:40.623 INFO  - Query FIDS data of [XX0003] successfully.
+11:42:40.893 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:41.136 INFO  - Query FIDS data of [XX0001] successfully.
+11:42:41.822 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:42:42.612 INFO  - Sure to do this FIDS deletion.
+11:42:42.621 INFO  - Start to delete selected FIDS test data.
+11:42:42.642 INFO  - Delete a test data of flight: XX0004 successfully.
+11:42:42.649 INFO  - The selected FIDS test data: XX0001 has been deleted.
+11:42:42.660 INFO  - Query FIDS data successfully.
+11:42:42.671 INFO  - Query BSM data successfully.
+11:42:44.353 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:44.659 INFO  - Query FIDS data of [XX0003] successfully.
+11:42:45.014 INFO  - Query FIDS data of [XX0002] successfully.
+11:42:49.537 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:42:51.141 INFO  - Sure to do this FIDS deletion.
+11:42:51.167 INFO  - Start to delete selected FIDS test data.
+11:42:51.187 INFO  - The selected FIDS test data: XX0001* is not existed.
+11:43:23.823 INFO  - Query FIDS data successfully.
+11:43:23.835 INFO  - Query BSM data successfully.
+11:43:25.877 INFO  - Query FIDS data of [XX0001] successfully.
+11:43:28.910 INFO  - MainForm of [BRS Test Data Generator] Closed.
+11:44:54.627 INFO  - MainForm of [BRS Test Data Generator] initialized.
+11:44:55.167 INFO  - Query FIDS data successfully.
+11:44:55.194 INFO  - Query BSM data successfully.
+11:44:57.650 INFO  - Query FIDS data of [XX0003] successfully.
+11:44:58.028 INFO  - Query FIDS data of [XX0003] successfully.
+11:44:59.848 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:00.489 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:04.553 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:05.199 INFO  - Query FIDS data of [XX0002] successfully.
+11:45:06.267 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:06.957 INFO  - Query FIDS data of [XX0002] successfully.
+11:45:08.338 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:09.426 INFO  - Query FIDS data of [XX0002] successfully.
+11:45:10.424 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:11.394 INFO  - Query FIDS data of [XX0002] successfully.
+11:45:13.367 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:13.703 INFO  - Query FIDS data of [XX0002] successfully.
+11:45:14.236 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:14.619 INFO  - Query FIDS data of [XX0003] successfully.
+11:45:15.265 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:45:16.160 INFO  - Sure to do this FIDS deletion.
+11:45:16.170 INFO  - Start to delete selected FIDS test data.
+11:45:16.218 INFO  - Delete a test data of flight: XX0004 successfully.
+11:45:16.226 INFO  - The selected FIDS test data: XX0003 has been deleted.
+11:45:16.239 INFO  - Query FIDS data successfully.
+11:45:16.252 INFO  - Query BSM data successfully.
+11:45:16.470 INFO  - Delete a test data of flight: XX0003 successfully.
+11:45:16.497 INFO  - The selected FIDS test data: XX0002 has been deleted.
+11:45:16.528 INFO  - Query FIDS data successfully.
+11:45:16.548 INFO  - Query BSM data successfully.
+11:45:30.679 INFO  - Query FIDS data successfully.
+11:45:30.691 INFO  - Query BSM data successfully.
+11:45:38.754 INFO  - Query FIDS data successfully.
+11:45:38.769 INFO  - Query BSM data successfully.
+11:48:43.417 INFO  - MainForm of [BRS Test Data Generator] Closed.
+13:04:25.209 INFO  - MainForm of [BRS Test Data Generator] initialized.
+13:04:25.787 INFO  - Query FIDS data successfully.
+13:04:25.811 INFO  - Query BSM data successfully.
+13:04:50.281 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:09:54.743 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:09:55.289 INFO  - Query FIDS data successfully.
+15:09:55.316 INFO  - Query BSM data successfully.
+15:09:59.237 INFO  - Query FIDS data of [XX0001] successfully.
+15:09:59.279 INFO  - Query BSM data successfully.
+15:10:00.945 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:00.968 INFO  - Query BSM data successfully.
+15:10:01.914 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:01.930 INFO  - Query BSM data successfully.
+15:10:04.031 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:04.066 INFO  - There is non of current BSM data of selected flight to query.
+15:10:04.330 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:04.360 INFO  - Query BSM data successfully.
+15:10:05.570 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:05.585 INFO  - Query BSM data successfully.
+15:10:06.468 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:06.497 INFO  - Query BSM data successfully.
+15:10:06.779 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:06.792 INFO  - There is non of current BSM data of selected flight to query.
+15:10:07.248 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:07.268 INFO  - Query BSM data successfully.
+15:10:08.248 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:08.264 INFO  - Query BSM data successfully.
+15:10:10.027 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:10.051 INFO  - There is non of current BSM data of selected flight to query.
+15:10:10.833 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:10.848 INFO  - Query BSM data successfully.
+15:10:46.105 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:46.137 INFO  - Query BSM data successfully.
+15:10:46.668 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:46.683 INFO  - There is non of current BSM data of selected flight to query.
+15:10:46.999 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:47.030 INFO  - Query BSM data successfully.
+15:10:47.638 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:47.664 INFO  - There is non of current BSM data of selected flight to query.
+15:10:47.887 INFO  - Query FIDS data of [XX0003] successfully.
+15:10:47.905 INFO  - There is non of current BSM data of selected flight to query.
+15:10:48.304 INFO  - Query FIDS data of [XX0002] successfully.
+15:10:48.317 INFO  - There is non of current BSM data of selected flight to query.
+15:10:48.544 INFO  - Query FIDS data of [XX0001] successfully.
+15:10:48.557 INFO  - Query BSM data successfully.
+15:10:49.656 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:11:53.832 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:11:54.418 INFO  - Query FIDS data successfully.
+15:11:54.440 INFO  - Query BSM data successfully.
+15:11:59.879 INFO  - Query FIDS data of [XX0001] successfully.
+15:11:59.904 INFO  - Query BSM data successfully.
+15:12:02.476 INFO  - Query FIDS data of [XX0001] successfully.
+15:12:02.494 INFO  - Query BSM data successfully.
+15:12:03.566 INFO  - Query FIDS data of [XX0001] successfully.
+15:12:03.590 INFO  - Query BSM data successfully.
+15:18:27.376 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:18:27.921 INFO  - Query FIDS data successfully.
+15:18:27.948 INFO  - Query BSM data successfully.
+15:18:30.798 INFO  - Query FIDS data of [XX0001] successfully.
+15:18:30.827 INFO  - Query BSM data successfully.
+15:18:32.292 INFO  - Query FIDS data of [XX0002] successfully.
+15:18:32.319 INFO  - There is non of current BSM data of selected flight to query.
+15:18:32.630 INFO  - Query FIDS data of [XX0003] successfully.
+15:18:32.647 INFO  - There is non of current BSM data of selected flight to query.
+15:18:32.968 INFO  - Query FIDS data of [XX0002] successfully.
+15:18:33.013 INFO  - There is non of current BSM data of selected flight to query.
+15:18:33.263 INFO  - Query FIDS data of [XX0001] successfully.
+15:18:33.278 INFO  - Query BSM data successfully.
+15:18:34.749 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:20:00.883 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:20:01.495 INFO  - Query FIDS data successfully.
+15:20:01.518 INFO  - Query BSM data successfully.
+15:20:27.469 INFO  - Query FIDS data of [XX0001] successfully.
+15:20:27.503 INFO  - Query BSM data successfully.
+15:20:44.089 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:27:09.086 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:27:09.668 INFO  - Query FIDS data successfully.
+15:27:09.705 INFO  - Query BSM data successfully.
+15:27:12.278 INFO  - Query FIDS data of [XX0002] successfully.
+15:27:12.305 INFO  - There is non of current BSM data of selected flight to query.
+15:27:12.857 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:12.887 INFO  - Query BSM data successfully.
+15:27:16.181 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:16.213 INFO  - Query BSM data successfully.
+15:27:19.380 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:19.413 INFO  - Query BSM data successfully.
+15:27:27.291 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:27.308 INFO  - Query BSM data successfully.
+15:27:31.729 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:31.772 INFO  - Query BSM data successfully.
+15:27:33.063 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:33.099 INFO  - Query BSM data successfully.
+15:27:35.265 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:35.302 INFO  - Query BSM data successfully.
+15:27:35.709 INFO  - Query FIDS data of [XX0002] successfully.
+15:27:35.759 INFO  - There is non of current BSM data of selected flight to query.
+15:27:36.015 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:36.028 INFO  - Query BSM data successfully.
+15:27:37.110 INFO  - Query FIDS data of [XX0002] successfully.
+15:27:37.143 INFO  - There is non of current BSM data of selected flight to query.
+15:27:37.376 INFO  - Query FIDS data of [XX0003] successfully.
+15:27:37.388 INFO  - There is non of current BSM data of selected flight to query.
+15:27:37.675 INFO  - Query FIDS data of [XX0002] successfully.
+15:27:37.689 INFO  - There is non of current BSM data of selected flight to query.
+15:27:38.173 INFO  - Query FIDS data of [XX0001] successfully.
+15:27:38.202 INFO  - Query BSM data successfully.
+15:28:08.613 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:31:19.824 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:31:20.365 INFO  - Query FIDS data successfully.
+15:31:20.389 INFO  - Query BSM data successfully.
+15:31:22.554 INFO  - Query FIDS data of [XX0002] successfully.
+15:31:22.743 INFO  - There is non of current BSM data of selected flight to query.
+15:31:25.074 INFO  - Query FIDS data of [XX0003] successfully.
+15:31:25.089 INFO  - There is non of current BSM data of selected flight to query.
+15:31:25.984 INFO  - Query FIDS data of [XX0002] successfully.
+15:31:26.008 INFO  - There is non of current BSM data of selected flight to query.
+15:31:36.669 INFO  - Query FIDS data of [XX0002] successfully.
+15:31:36.691 INFO  - There is non of current BSM data of selected flight to query.
+15:32:22.078 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:37:05.101 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:37:05.727 INFO  - Query FIDS data successfully.
+15:37:05.753 INFO  - Query BSM data successfully.
+15:38:35.590 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:43:40.307 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:43:40.861 INFO  - Query FIDS data successfully.
+15:43:40.889 INFO  - Query BSM data successfully.
+15:43:54.303 INFO  - Query FIDS data of [XX0001] successfully.
+15:43:54.336 INFO  - Query BSM data successfully.
+15:52:35.786 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:52:36.489 INFO  - Query FIDS data successfully.
+15:52:36.513 INFO  - Query BSM data successfully.
+15:52:42.855 INFO  - Query FIDS data of [XX0001] successfully.
+15:52:42.886 INFO  - Query BSM data successfully.
+15:53:25.149 INFO  - Query FIDS data of [XX0001] successfully.
+15:53:25.166 INFO  - Query BSM data successfully.
+15:55:02.756 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:08:15.217 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:08:16.186 INFO  - Query FIDS data successfully.
+16:08:16.214 INFO  - Query BSM data successfully.
+16:08:34.996 INFO  - Query FIDS data of [XX0001] successfully.
+16:08:35.026 INFO  - Query BSM data successfully.
+16:08:36.411 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:36.587 INFO  - There is non of current BSM data of selected flight to query.
+16:08:40.568 INFO  - Query FIDS data of [XX0003] successfully.
+16:08:40.596 INFO  - There is non of current BSM data of selected flight to query.
+16:08:41.364 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:41.396 INFO  - There is non of current BSM data of selected flight to query.
+16:08:41.631 INFO  - Query FIDS data of [XX0001] successfully.
+16:08:41.672 INFO  - Query BSM data successfully.
+16:08:42.428 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:42.462 INFO  - There is non of current BSM data of selected flight to query.
+16:08:42.775 INFO  - Query FIDS data of [XX0003] successfully.
+16:08:42.959 INFO  - There is non of current BSM data of selected flight to query.
+16:08:43.494 INFO  - Query FIDS data of [XX0001] successfully.
+16:08:43.696 INFO  - Query BSM data successfully.
+16:08:44.130 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:44.160 INFO  - There is non of current BSM data of selected flight to query.
+16:08:46.854 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:47.054 INFO  - There is non of current BSM data of selected flight to query.
+16:08:47.849 INFO  - Query FIDS data of [XX0002] successfully.
+16:08:47.874 INFO  - There is non of current BSM data of selected flight to query.
+16:09:41.756 INFO  - Query FIDS data of [XX0001] successfully.
+16:09:41.820 INFO  - Query BSM data successfully.
+16:09:42.130 INFO  - Query FIDS data of [XX0002] successfully.
+16:09:42.142 INFO  - There is non of current BSM data of selected flight to query.
+16:09:50.321 INFO  - Query FIDS data of [XX0001] successfully.
+16:09:50.357 INFO  - Query BSM data successfully.
+16:10:04.928 INFO  - Query FIDS data of [XX0002] successfully.
+16:10:04.949 INFO  - There is non of current BSM data of selected flight to query.
+16:10:22.925 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:13:10.711 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:13:11.457 INFO  - Query FIDS data successfully.
+16:13:11.486 INFO  - Query BSM data successfully.
+16:20:06.808 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:20:07.530 INFO  - Query FIDS data successfully.
+16:20:07.559 INFO  - Query BSM data successfully.
+16:20:10.483 INFO  - Query FIDS data of [XX0001] successfully.
+16:20:10.517 INFO  - Query BSM data successfully.
+16:20:11.279 INFO  - Query FIDS data of [XX0002] successfully.
+16:20:11.292 INFO  - There is non of current BSM data of selected flight to query.
+16:20:13.798 INFO  - Query FIDS data of [XX0001] successfully.
+16:20:13.826 INFO  - Query BSM data successfully.
+16:20:17.377 INFO  - Query FIDS data of [XX0001] successfully.
+16:20:17.421 INFO  - Query BSM data successfully.
+16:20:20.380 INFO  - Query FIDS data of [XX0001] successfully.
+16:20:20.500 INFO  - Query BSM data successfully.
+16:20:21.604 INFO  - Query FIDS data of [XX0002] successfully.
+16:20:21.623 INFO  - There is non of current BSM data of selected flight to query.
+16:20:38.494 INFO  - Query FIDS data of [XX0002] successfully.
+16:20:38.687 INFO  - There is non of current BSM data of selected flight to query.
+16:20:39.516 INFO  - Query FIDS data of [XX0002] successfully.
+16:20:39.550 INFO  - There is non of current BSM data of selected flight to query.
+16:20:40.810 INFO  - Query FIDS data of [XX0002] successfully.
+16:20:40.833 INFO  - There is non of current BSM data of selected flight to query.
+16:21:14.564 INFO  - Query FIDS data of [XX0001] successfully.
+16:21:14.638 INFO  - Query BSM data successfully.
+16:25:21.086 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:25:22.123 INFO  - Query FIDS data successfully.
+16:25:22.156 INFO  - Query BSM data successfully.
+16:25:24.525 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:24.707 INFO  - Query BSM data successfully.
+16:25:25.559 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:25.581 INFO  - There is non of current BSM data of selected flight to query.
+16:25:26.877 INFO  - Query FIDS data of [XX0003] successfully.
+16:25:26.891 INFO  - There is non of current BSM data of selected flight to query.
+16:25:28.205 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:28.226 INFO  - Query BSM data successfully.
+16:25:33.482 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:33.674 INFO  - There is non of current BSM data of selected flight to query.
+16:25:33.687 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:33.702 INFO  - Query BSM data successfully.
+16:25:34.502 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:34.534 INFO  - There is non of current BSM data of selected flight to query.
+16:25:34.766 INFO  - Query FIDS data of [XX0003] successfully.
+16:25:34.790 INFO  - There is non of current BSM data of selected flight to query.
+16:25:35.314 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:36.098 INFO  - Query BSM data successfully.
+16:25:43.537 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:43.673 INFO  - Query BSM data successfully.
+16:25:46.723 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:46.754 INFO  - There is non of current BSM data of selected flight to query.
+16:25:48.917 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:48.954 INFO  - Query BSM data successfully.
+16:25:51.017 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:51.062 INFO  - There is non of current BSM data of selected flight to query.
+16:25:52.738 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:52.775 INFO  - Query BSM data successfully.
+16:25:53.805 INFO  - Query FIDS data of [XX0002] successfully.
+16:25:53.837 INFO  - There is non of current BSM data of selected flight to query.
+16:25:57.251 INFO  - Query FIDS data of [XX0001] successfully.
+16:25:57.282 INFO  - Query BSM data successfully.
+16:26:07.494 INFO  - Query FIDS data of [XX0002] successfully.
+16:26:07.526 INFO  - There is non of current BSM data of selected flight to query.
+16:26:08.267 INFO  - Query FIDS data of [XX0001] successfully.
+16:26:08.280 INFO  - Query BSM data successfully.
+16:26:08.600 INFO  - Query FIDS data of [XX0002] successfully.
+16:26:08.800 INFO  - There is non of current BSM data of selected flight to query.
+16:26:08.862 INFO  - Query FIDS data of [XX0003] successfully.
+16:26:08.879 INFO  - There is non of current BSM data of selected flight to query.
+16:26:09.597 INFO  - Query FIDS data of [XX0002] successfully.
+16:26:09.611 INFO  - There is non of current BSM data of selected flight to query.
+16:26:10.196 INFO  - Query FIDS data of [XX0001] successfully.
+16:26:10.394 INFO  - Query BSM data successfully.
+16:26:22.533 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:28:52.444 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:28:53.393 INFO  - Query FIDS data successfully.
+16:28:53.575 INFO  - Query BSM data successfully.
+16:31:17.463 INFO  - Query FIDS data of [XX0001] successfully.
+16:31:17.493 INFO  - Query BSM data successfully.
+16:31:30.262 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:32:41.636 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:32:42.373 INFO  - Query FIDS data successfully.
+16:32:42.572 INFO  - Query BSM data successfully.
+16:32:47.382 INFO  - Query FIDS data of [XX0001] successfully.
+16:32:47.400 INFO  - Query BSM data successfully.
+16:32:58.003 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:34:45.217 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:34:46.032 INFO  - Query FIDS data successfully.
+16:34:46.171 INFO  - Query BSM data successfully.
+16:34:49.086 INFO  - Query FIDS data of [XX0001] successfully.
+16:34:49.139 INFO  - Query BSM data successfully.
+16:34:57.032 INFO  - Query FIDS data of [XX0001] successfully.
+16:34:57.078 INFO  - Query BSM data successfully.
+16:34:58.886 INFO  - Query FIDS data of [XX0001] successfully.
+16:34:58.914 INFO  - Query BSM data successfully.
+16:35:44.076 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+16:36:06.898 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+16:40:43.034 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:40:44.103 INFO  - Query FIDS data successfully.
+16:40:44.271 INFO  - Query BSM data successfully.
+16:40:48.875 INFO  - Query FIDS data of [XX0001] successfully.
+16:40:49.404 INFO  - Query BSM data successfully.
+16:41:26.220 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+16:41:26.419 INFO  - Query FIDS data successfully.
+16:41:26.432 INFO  - Query BSM data successfully.
+16:41:28.278 INFO  - Query FIDS data of [XX0001] successfully.
+16:41:28.291 INFO  - Query BSM data successfully.
+16:41:29.609 INFO  - Query FIDS data of [XX0002] successfully.
+16:41:29.657 INFO  - There is non of current BSM data of selected flight to query.
+16:41:30.618 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+16:41:30.669 INFO  - Query FIDS data successfully.
+16:41:30.683 INFO  - Query BSM data successfully.
+16:41:33.872 INFO  - Query FIDS data of [XX0001] successfully.
+16:41:33.918 INFO  - Query BSM data successfully.
+16:41:37.312 INFO  - Query FIDS data of [XX0001] successfully.
+16:41:37.347 INFO  - Query BSM data successfully.
+16:42:05.647 INFO  - MainForm of [BRS Test Data Generator] Closed.
+16:50:41.284 INFO  - MainForm of [BRS Test Data Generator] initialized.
+16:50:44.926 INFO  - Query FIDS data successfully.
+16:50:44.957 INFO  - Query BSM data successfully.
+16:50:47.631 INFO  - Query FIDS data of [XX0001] successfully.
+16:50:47.647 INFO  - Query BSM data successfully.
+16:50:59.912 INFO  - Query FIDS data of [XX0001] successfully.
+16:50:59.938 INFO  - Query BSM data successfully.
+16:51:01.769 INFO  - Query FIDS data of [XX0002] successfully.
+16:51:01.828 INFO  - There is non of current BSM data of selected flight to query.
+16:51:02.833 INFO  - Query FIDS data of [XX0001] successfully.
+16:51:02.870 INFO  - Query BSM data successfully.
+16:51:05.910 INFO  - Query FIDS data of [XX0001] successfully.
+16:51:05.985 INFO  - Query BSM data successfully.
+16:51:08.847 INFO  - Query FIDS data of [XX0001] successfully.
+16:51:08.895 INFO  - Query BSM data successfully.
+16:51:11.062 INFO  - Query FIDS data of [XX0001] successfully.
+16:51:11.239 INFO  - Query BSM data successfully.

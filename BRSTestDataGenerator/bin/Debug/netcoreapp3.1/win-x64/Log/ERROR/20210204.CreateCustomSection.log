@@ -1,0 +1,20 @@
+13:22:43.425 ERROR - The configuration section cannot contain a CDATA or text element. (D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Debug\netcoreapp3.1\win-x64\ASI.ICT.BRSTestDataGenerator.dll.config line 30)    at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.ConfigurationSectionCollection.Get(String name)
+   at System.Configuration.ConfigurationSectionCollection.get_Item(String name)
+   at BRSTestDataGenerator.ConfigScript.AppConfig.AppPropertySetting.GetPropSection(String pSectionName) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppConfig.cs:line 430
+   at Lib.Misc.Property.XMLPropertyBase.PropertySetting`1.GetPropSection()
+   at BRSTestDataGenerator.ConfigScript.AppConfig.AppPropertySetting.CreateCustomSection() in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppConfig.cs:line 541
+
+13:24:19.591 ERROR - An error occurred executing the configuration section handler for AppConfigSetting.    at System.Configuration.MgmtConfigurationRecord.GetConfigDefinitionUpdates(Boolean requireUpdates, ConfigurationSaveMode saveMode, Boolean forceSaveAll, ConfigDefinitionUpdates& definitionUpdates, ArrayList& configSourceUpdates)
+   at System.Configuration.MgmtConfigurationRecord.SaveAs(String filename, ConfigurationSaveMode saveMode, Boolean forceUpdateAll)
+   at System.Configuration.Configuration.SaveAsImpl(String filename, ConfigurationSaveMode saveMode, Boolean forceSaveAll)
+   at System.Configuration.Configuration.Save(ConfigurationSaveMode saveMode)
+   at BRSTestDataGenerator.ConfigScript.AppConfig.AppPropertySetting.CreateCustomSection() in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppConfig.cs:line 577
+The entry '' has already been added.    at System.Configuration.ConfigurationElementCollection.BaseAdd(ConfigurationElement element, Boolean throwIfExists, Boolean ignoreLocks)
+   at System.Configuration.ConfigurationElementCollection.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)
+   at System.Configuration.ConfigurationElement.Unmerge(ConfigurationElement sourceElement, ConfigurationElement parentElement, ConfigurationSaveMode saveMode)
+   at System.Configuration.ConfigurationSection.SerializeSection(ConfigurationElement parentElement, String name, ConfigurationSaveMode saveMode)
+   at System.Configuration.MgmtConfigurationRecord.GetConfigDefinitionUpdates(Boolean requireUpdates, ConfigurationSaveMode saveMode, Boolean forceSaveAll, ConfigDefinitionUpdates& definitionUpdates, ArrayList& configSourceUpdates)
+

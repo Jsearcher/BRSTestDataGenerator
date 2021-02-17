@@ -29,502 +29,397 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.groupFIDS = new System.Windows.Forms.GroupBox();
-            this.panelFIDS = new System.Windows.Forms.Panel();
-            this.dataGridFLT = new System.Windows.Forms.DataGridView();
-            this.FLIGHT_NO_C = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DATE_C = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STD_C = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ETD_C = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DES_C = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button_Clear_FIDS = new System.Windows.Forms.Button();
-            this.button_Confirm_FIDS = new System.Windows.Forms.Button();
-            this.text_DES_FIDS = new System.Windows.Forms.TextBox();
-            this.labelDES = new System.Windows.Forms.Label();
-            this.labelETD = new System.Windows.Forms.Label();
-            this.text_ETD_FIDS = new System.Windows.Forms.TextBox();
-            this.labelSTD = new System.Windows.Forms.Label();
-            this.text_STD_FIDS = new System.Windows.Forms.TextBox();
-            this.labelFlight = new System.Windows.Forms.Label();
-            this.groupBSM = new System.Windows.Forms.GroupBox();
-            this.panelBSM = new System.Windows.Forms.Panel();
-            this.text_CabinClass_BSM = new System.Windows.Forms.TextBox();
-            this.labelCabinClass = new System.Windows.Forms.Label();
-            this.dataGridBSM = new System.Windows.Forms.DataGridView();
-            this.BAG_TAG_B = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BSM_DATE_B = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FLIGHT_NO_B = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BAG_STATE_B = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CABIN_CLASS_B = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button_CONFIRM_BSM = new System.Windows.Forms.Button();
-            this.button_CLEAR_BSM = new System.Windows.Forms.Button();
-            this.text_Number_BSM = new System.Windows.Forms.TextBox();
-            this.labelDataNumber = new System.Windows.Forms.Label();
-            this.text_BagState_BSM = new System.Windows.Forms.TextBox();
-            this.labelBagState = new System.Windows.Forms.Label();
-            this.text_USER = new System.Windows.Forms.TextBox();
-            this.groupFIDS.SuspendLayout();
-            this.panelFIDS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFLT)).BeginInit();
-            this.groupBSM.SuspendLayout();
-            this.panelBSM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBSM)).BeginInit();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "FLIGHT_NO"}, -1, System.Drawing.Color.Empty, System.Drawing.SystemColors.Window, null);
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("DATE");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("STD");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("ETD");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("DES");
+            this.Panel_Control = new System.Windows.Forms.Panel();
+            this.List_Flight = new System.Windows.Forms.ListView();
+            this.ListHead_FlightNo = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_Date = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_Bags = new System.Windows.Forms.ColumnHeader();
+            this.Main_ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.Button_AddFlight = new System.Windows.Forms.ToolStripButton();
+            this.Button_AddBag = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.Button_Undo = new System.Windows.Forms.ToolStripButton();
+            this.Button_Redo = new System.Windows.Forms.ToolStripButton();
+            this.Button_Reload = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.Button_Reset = new System.Windows.Forms.ToolStripButton();
+            this.Button_Delete = new System.Windows.Forms.ToolStripButton();
+            this.Group_Control = new System.Windows.Forms.GroupBox();
+            this.Group_Property = new System.Windows.Forms.GroupBox();
+            this.List_Properties = new System.Windows.Forms.ListView();
+            this.ListHead_Name_Prop = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_Value_Prop = new System.Windows.Forms.ColumnHeader();
+            this.Label_FlightProp = new System.Windows.Forms.Label();
+            this.List_Baggage = new System.Windows.Forms.ListView();
+            this.ListHead_BagTag = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_BsmDate = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_BsmFlight = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_BagState = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_CabinClass = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_AuthLoad = new System.Windows.Forms.ColumnHeader();
+            this.ListHead_AuthTransport = new System.Windows.Forms.ColumnHeader();
+            this.Panel_ShowList = new System.Windows.Forms.Panel();
+            this.Text_BagAmend = new System.Windows.Forms.TextBox();
+            this.Panel_Control.SuspendLayout();
+            this.Main_ToolStrip.SuspendLayout();
+            this.Group_Control.SuspendLayout();
+            this.Group_Property.SuspendLayout();
+            this.Panel_ShowList.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupFIDS
-            // 
-            this.groupFIDS.Controls.Add(this.panelFIDS);
-            this.groupFIDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupFIDS.Location = new System.Drawing.Point(12, 32);
-            this.groupFIDS.Name = "groupFIDS";
-            this.groupFIDS.Size = new System.Drawing.Size(700, 200);
-            this.groupFIDS.TabIndex = 0;
-            this.groupFIDS.TabStop = false;
-            this.groupFIDS.Text = "FIDS_2DAY";
-            // 
-            // panelFIDS
-            // 
-            this.panelFIDS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelFIDS.Controls.Add(this.dataGridFLT);
-            this.panelFIDS.Controls.Add(this.button_Clear_FIDS);
-            this.panelFIDS.Controls.Add(this.button_Confirm_FIDS);
-            this.panelFIDS.Controls.Add(this.text_DES_FIDS);
-            this.panelFIDS.Controls.Add(this.labelDES);
-            this.panelFIDS.Controls.Add(this.labelETD);
-            this.panelFIDS.Controls.Add(this.text_ETD_FIDS);
-            this.panelFIDS.Controls.Add(this.labelSTD);
-            this.panelFIDS.Controls.Add(this.text_STD_FIDS);
-            this.panelFIDS.Controls.Add(this.labelFlight);
-            this.panelFIDS.Location = new System.Drawing.Point(5, 25);
-            this.panelFIDS.Name = "panelFIDS";
-            this.panelFIDS.Size = new System.Drawing.Size(689, 170);
-            this.panelFIDS.TabIndex = 0;
-            // 
-            // dataGridFLT
-            // 
-            this.dataGridFLT.AllowUserToAddRows = false;
-            this.dataGridFLT.AllowUserToDeleteRows = false;
-            this.dataGridFLT.AllowUserToResizeRows = false;
-            this.dataGridFLT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridFLT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FLIGHT_NO_C,
-            this.DATE_C,
-            this.STD_C,
-            this.ETD_C,
-            this.DES_C});
-            this.dataGridFLT.Location = new System.Drawing.Point(15, 15);
-            this.dataGridFLT.MultiSelect = false;
-            this.dataGridFLT.Name = "dataGridFLT";
-            this.dataGridFLT.ReadOnly = true;
-            this.dataGridFLT.RowHeadersVisible = false;
-            this.dataGridFLT.Size = new System.Drawing.Size(405, 140);
-            this.dataGridFLT.TabIndex = 0;
-            // 
-            // FLIGHT_NO_C
-            // 
-            this.FLIGHT_NO_C.HeaderText = "FLIGHT_NO";
-            this.FLIGHT_NO_C.Name = "FLIGHT_NO_C";
-            this.FLIGHT_NO_C.ReadOnly = true;
-            this.FLIGHT_NO_C.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FLIGHT_NO_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.FLIGHT_NO_C.Width = 108;
-            // 
-            // DATE_C
-            // 
-            this.DATE_C.HeaderText = "DATE";
-            this.DATE_C.Name = "DATE_C";
-            this.DATE_C.ReadOnly = true;
-            this.DATE_C.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DATE_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.DATE_C.Width = 86;
-            // 
-            // STD_C
-            // 
-            this.STD_C.HeaderText = "STD";
-            this.STD_C.Name = "STD_C";
-            this.STD_C.ReadOnly = true;
-            this.STD_C.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.STD_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.STD_C.Width = 73;
-            // 
-            // ETD_C
-            // 
-            this.ETD_C.HeaderText = "ETD";
-            this.ETD_C.Name = "ETD_C";
-            this.ETD_C.ReadOnly = true;
-            this.ETD_C.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ETD_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.ETD_C.Width = 73;
-            // 
-            // DES_C
-            // 
-            this.DES_C.HeaderText = "DES";
-            this.DES_C.Name = "DES_C";
-            this.DES_C.ReadOnly = true;
-            this.DES_C.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DES_C.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.DES_C.Width = 70;
-            // 
-            // button_Clear_FIDS
-            // 
-            this.button_Clear_FIDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Clear_FIDS.ForeColor = System.Drawing.Color.Maroon;
-            this.button_Clear_FIDS.Location = new System.Drawing.Point(579, 89);
-            this.button_Clear_FIDS.Name = "button_Clear_FIDS";
-            this.button_Clear_FIDS.Size = new System.Drawing.Size(100, 30);
-            this.button_Clear_FIDS.TabIndex = 5;
-            this.button_Clear_FIDS.Text = "CLEAR";
-            this.button_Clear_FIDS.UseVisualStyleBackColor = true;
-            this.button_Clear_FIDS.Click += new System.EventHandler(this.Button_Clear_FIDS_Click);
-            // 
-            // button_Confirm_FIDS
-            // 
-            this.button_Confirm_FIDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Confirm_FIDS.ForeColor = System.Drawing.Color.Green;
-            this.button_Confirm_FIDS.Location = new System.Drawing.Point(579, 47);
-            this.button_Confirm_FIDS.Name = "button_Confirm_FIDS";
-            this.button_Confirm_FIDS.Size = new System.Drawing.Size(100, 30);
-            this.button_Confirm_FIDS.TabIndex = 4;
-            this.button_Confirm_FIDS.Text = "CONFIRM";
-            this.button_Confirm_FIDS.UseVisualStyleBackColor = true;
-            this.button_Confirm_FIDS.Click += new System.EventHandler(this.Button_Confirm_FIDS_Click);
-            // 
-            // text_DES_FIDS
-            // 
-            this.text_DES_FIDS.ForeColor = System.Drawing.Color.Silver;
-            this.text_DES_FIDS.Location = new System.Drawing.Point(474, 132);
-            this.text_DES_FIDS.Name = "text_DES_FIDS";
-            this.text_DES_FIDS.Size = new System.Drawing.Size(80, 26);
-            this.text_DES_FIDS.TabIndex = 3;
-            this.text_DES_FIDS.Text = "KIX";
-            this.text_DES_FIDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_DES_FIDS.GotFocus += new System.EventHandler(this.Text_DES_FIDS_GotFocus);
-            this.text_DES_FIDS.LostFocus += new System.EventHandler(this.Text_DES_FIDS_LostFocus);
-            // 
-            // labelDES
-            // 
-            this.labelDES.AutoSize = true;
-            this.labelDES.Location = new System.Drawing.Point(426, 135);
-            this.labelDES.Name = "labelDES";
-            this.labelDES.Size = new System.Drawing.Size(43, 20);
-            this.labelDES.TabIndex = 5;
-            this.labelDES.Text = "DES";
-            this.labelDES.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labelETD
-            // 
-            this.labelETD.AutoSize = true;
-            this.labelETD.Location = new System.Drawing.Point(426, 92);
-            this.labelETD.Name = "labelETD";
-            this.labelETD.Size = new System.Drawing.Size(41, 20);
-            this.labelETD.TabIndex = 4;
-            this.labelETD.Text = "ETD";
-            this.labelETD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // text_ETD_FIDS
-            // 
-            this.text_ETD_FIDS.ForeColor = System.Drawing.Color.Silver;
-            this.text_ETD_FIDS.Location = new System.Drawing.Point(474, 89);
-            this.text_ETD_FIDS.Name = "text_ETD_FIDS";
-            this.text_ETD_FIDS.Size = new System.Drawing.Size(80, 26);
-            this.text_ETD_FIDS.TabIndex = 2;
-            this.text_ETD_FIDS.Text = "1520";
-            this.text_ETD_FIDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_ETD_FIDS.GotFocus += new System.EventHandler(this.Text_ETD_FIDS_GotFocus);
-            this.text_ETD_FIDS.LostFocus += new System.EventHandler(this.Text_ETD_FIDS_LostFocus);
-            // 
-            // labelSTD
-            // 
-            this.labelSTD.AutoSize = true;
-            this.labelSTD.Location = new System.Drawing.Point(426, 50);
-            this.labelSTD.Name = "labelSTD";
-            this.labelSTD.Size = new System.Drawing.Size(41, 20);
-            this.labelSTD.TabIndex = 2;
-            this.labelSTD.Text = "STD";
-            this.labelSTD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // text_STD_FIDS
-            // 
-            this.text_STD_FIDS.ForeColor = System.Drawing.Color.Silver;
-            this.text_STD_FIDS.Location = new System.Drawing.Point(474, 47);
-            this.text_STD_FIDS.Name = "text_STD_FIDS";
-            this.text_STD_FIDS.Size = new System.Drawing.Size(80, 26);
-            this.text_STD_FIDS.TabIndex = 1;
-            this.text_STD_FIDS.Text = "1520";
-            this.text_STD_FIDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_STD_FIDS.GotFocus += new System.EventHandler(this.Text_STD_FIDS_GotFocus);
-            this.text_STD_FIDS.LostFocus += new System.EventHandler(this.Text_STD_FIDS_LostFocus);
-            // 
-            // labelFlight
-            // 
-            this.labelFlight.AutoSize = true;
-            this.labelFlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelFlight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.labelFlight.Location = new System.Drawing.Point(426, 15);
-            this.labelFlight.Name = "labelFlight";
-            this.labelFlight.Size = new System.Drawing.Size(84, 24);
-            this.labelFlight.TabIndex = 0;
-            this.labelFlight.Text = "XX0000";
-            this.labelFlight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // groupBSM
-            // 
-            this.groupBSM.Controls.Add(this.panelBSM);
-            this.groupBSM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBSM.Location = new System.Drawing.Point(12, 238);
-            this.groupBSM.Name = "groupBSM";
-            this.groupBSM.Size = new System.Drawing.Size(700, 200);
-            this.groupBSM.TabIndex = 1;
-            this.groupBSM.TabStop = false;
-            this.groupBSM.Text = "BSM_2DAY";
-            // 
-            // panelBSM
-            // 
-            this.panelBSM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panelBSM.Controls.Add(this.text_CabinClass_BSM);
-            this.panelBSM.Controls.Add(this.labelCabinClass);
-            this.panelBSM.Controls.Add(this.dataGridBSM);
-            this.panelBSM.Controls.Add(this.button_CONFIRM_BSM);
-            this.panelBSM.Controls.Add(this.button_CLEAR_BSM);
-            this.panelBSM.Controls.Add(this.text_Number_BSM);
-            this.panelBSM.Controls.Add(this.labelDataNumber);
-            this.panelBSM.Controls.Add(this.text_BagState_BSM);
-            this.panelBSM.Controls.Add(this.labelBagState);
-            this.panelBSM.Location = new System.Drawing.Point(5, 25);
-            this.panelBSM.Name = "panelBSM";
-            this.panelBSM.Size = new System.Drawing.Size(689, 170);
-            this.panelBSM.TabIndex = 0;
-            // 
-            // text_CabinClass_BSM
-            // 
-            this.text_CabinClass_BSM.ForeColor = System.Drawing.Color.Silver;
-            this.text_CabinClass_BSM.Location = new System.Drawing.Point(492, 132);
-            this.text_CabinClass_BSM.Name = "text_CabinClass_BSM";
-            this.text_CabinClass_BSM.Size = new System.Drawing.Size(50, 26);
-            this.text_CabinClass_BSM.TabIndex = 8;
-            this.text_CabinClass_BSM.Text = "Y";
-            this.text_CabinClass_BSM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_CabinClass_BSM.GotFocus += new System.EventHandler(this.Text_CabinClass_BSM_GotFocus);
-            this.text_CabinClass_BSM.LostFocus += new System.EventHandler(this.Text_CabinClass_BSM_LostFocus);
-            // 
-            // labelCabinClass
-            // 
-            this.labelCabinClass.AutoSize = true;
-            this.labelCabinClass.Location = new System.Drawing.Point(426, 135);
-            this.labelCabinClass.Name = "labelCabinClass";
-            this.labelCabinClass.Size = new System.Drawing.Size(62, 20);
-            this.labelCabinClass.TabIndex = 11;
-            this.labelCabinClass.Text = "CLASS";
-            // 
-            // dataGridBSM
-            // 
-            this.dataGridBSM.AllowUserToAddRows = false;
-            this.dataGridBSM.AllowUserToDeleteRows = false;
-            this.dataGridBSM.AllowUserToResizeRows = false;
-            this.dataGridBSM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBSM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BAG_TAG_B,
-            this.BSM_DATE_B,
-            this.FLIGHT_NO_B,
-            this.BAG_STATE_B,
-            this.CABIN_CLASS_B});
-            this.dataGridBSM.Location = new System.Drawing.Point(15, 15);
-            this.dataGridBSM.MultiSelect = false;
-            this.dataGridBSM.Name = "dataGridBSM";
-            this.dataGridBSM.ReadOnly = true;
-            this.dataGridBSM.RowHeadersVisible = false;
-            this.dataGridBSM.Size = new System.Drawing.Size(405, 140);
-            this.dataGridBSM.TabIndex = 0;
-            this.dataGridBSM.Text = "dataGridView2";
-            // 
-            // BAG_TAG_B
-            // 
-            this.BAG_TAG_B.HeaderText = "BAG_TAG";
-            this.BAG_TAG_B.Name = "BAG_TAG_B";
-            this.BAG_TAG_B.ReadOnly = true;
-            this.BAG_TAG_B.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BAG_TAG_B.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.BAG_TAG_B.Width = 108;
-            // 
-            // BSM_DATE_B
-            // 
-            this.BSM_DATE_B.HeaderText = "DATE";
-            this.BSM_DATE_B.Name = "BSM_DATE_B";
-            this.BSM_DATE_B.ReadOnly = true;
-            this.BSM_DATE_B.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BSM_DATE_B.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.BSM_DATE_B.Width = 86;
-            // 
-            // FLIGHT_NO_B
-            // 
-            this.FLIGHT_NO_B.HeaderText = "FLIGHT_NO";
-            this.FLIGHT_NO_B.Name = "FLIGHT_NO_B";
-            this.FLIGHT_NO_B.ReadOnly = true;
-            this.FLIGHT_NO_B.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FLIGHT_NO_B.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.FLIGHT_NO_B.Width = 108;
-            // 
-            // BAG_STATE_B
-            // 
-            this.BAG_STATE_B.HeaderText = "BAG_STATE";
-            this.BAG_STATE_B.Name = "BAG_STATE_B";
-            this.BAG_STATE_B.ReadOnly = true;
-            this.BAG_STATE_B.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.BAG_STATE_B.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.BAG_STATE_B.Width = 112;
-            // 
-            // CABIN_CLASS_B
-            // 
-            this.CABIN_CLASS_B.HeaderText = "CABIN_CLASS";
-            this.CABIN_CLASS_B.Name = "CABIN_CLASS_B";
-            this.CABIN_CLASS_B.ReadOnly = true;
-            this.CABIN_CLASS_B.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.CABIN_CLASS_B.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.CABIN_CLASS_B.Width = 128;
-            // 
-            // button_CONFIRM_BSM
-            // 
-            this.button_CONFIRM_BSM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_CONFIRM_BSM.ForeColor = System.Drawing.Color.Green;
-            this.button_CONFIRM_BSM.Location = new System.Drawing.Point(579, 47);
-            this.button_CONFIRM_BSM.Name = "button_CONFIRM_BSM";
-            this.button_CONFIRM_BSM.Size = new System.Drawing.Size(100, 30);
-            this.button_CONFIRM_BSM.TabIndex = 9;
-            this.button_CONFIRM_BSM.Text = "CONFIRM";
-            this.button_CONFIRM_BSM.UseVisualStyleBackColor = true;
-            this.button_CONFIRM_BSM.Click += new System.EventHandler(this.Button_CONFIRM_BSM_Click);
-            // 
-            // button_CLEAR_BSM
-            // 
-            this.button_CLEAR_BSM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_CLEAR_BSM.ForeColor = System.Drawing.Color.Maroon;
-            this.button_CLEAR_BSM.Location = new System.Drawing.Point(579, 89);
-            this.button_CLEAR_BSM.Name = "button_CLEAR_BSM";
-            this.button_CLEAR_BSM.Size = new System.Drawing.Size(100, 30);
-            this.button_CLEAR_BSM.TabIndex = 10;
-            this.button_CLEAR_BSM.Text = "CLEAR";
-            this.button_CLEAR_BSM.UseVisualStyleBackColor = true;
-            this.button_CLEAR_BSM.Click += new System.EventHandler(this.Button_CLEAR_BSM_Click);
-            // 
-            // text_Number_BSM
-            // 
-            this.text_Number_BSM.ForeColor = System.Drawing.Color.Silver;
-            this.text_Number_BSM.Location = new System.Drawing.Point(492, 47);
-            this.text_Number_BSM.Name = "text_Number_BSM";
-            this.text_Number_BSM.Size = new System.Drawing.Size(50, 26);
-            this.text_Number_BSM.TabIndex = 6;
-            this.text_Number_BSM.Text = "1";
-            this.text_Number_BSM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_Number_BSM.GotFocus += new System.EventHandler(this.Text_Number_BSM_GotFocus);
-            this.text_Number_BSM.LostFocus += new System.EventHandler(this.Text_Number_BSM_LostFocus);
-            // 
-            // labelDataNumber
-            // 
-            this.labelDataNumber.AutoSize = true;
-            this.labelDataNumber.Location = new System.Drawing.Point(425, 47);
-            this.labelDataNumber.Name = "labelDataNumber";
-            this.labelDataNumber.Size = new System.Drawing.Size(57, 20);
-            this.labelDataNumber.TabIndex = 0;
-            this.labelDataNumber.Text = "Data #";
-            this.labelDataNumber.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // text_BagState_BSM
-            // 
-            this.text_BagState_BSM.ForeColor = System.Drawing.Color.Silver;
-            this.text_BagState_BSM.Location = new System.Drawing.Point(492, 89);
-            this.text_BagState_BSM.Name = "text_BagState_BSM";
-            this.text_BagState_BSM.Size = new System.Drawing.Size(50, 26);
-            this.text_BagState_BSM.TabIndex = 7;
-            this.text_BagState_BSM.Text = "0";
-            this.text_BagState_BSM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.text_BagState_BSM.GotFocus += new System.EventHandler(this.Text_BagState_BSM_GotFocus);
-            this.text_BagState_BSM.LostFocus += new System.EventHandler(this.Text_BagState_BSM_LostFocus);
-            // 
-            // labelBagState
-            // 
-            this.labelBagState.AutoSize = true;
-            this.labelBagState.Location = new System.Drawing.Point(426, 92);
-            this.labelBagState.Name = "labelBagState";
-            this.labelBagState.Size = new System.Drawing.Size(60, 20);
-            this.labelBagState.TabIndex = 10;
-            this.labelBagState.Text = "STATE";
-            // 
-            // text_USER
-            // 
-            this.text_USER.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.text_USER.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.text_USER.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.text_USER.ForeColor = System.Drawing.Color.Red;
-            this.text_USER.Location = new System.Drawing.Point(632, 12);
-            this.text_USER.Name = "text_USER";
-            this.text_USER.Size = new System.Drawing.Size(80, 26);
-            this.text_USER.TabIndex = 10;
-            this.text_USER.Text = "asitest";
-            this.text_USER.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // Panel_Control
+            // 
+            this.Panel_Control.Controls.Add(this.List_Flight);
+            this.Panel_Control.Controls.Add(this.Main_ToolStrip);
+            this.Panel_Control.Location = new System.Drawing.Point(0, 22);
+            this.Panel_Control.Name = "Panel_Control";
+            this.Panel_Control.Size = new System.Drawing.Size(244, 317);
+            this.Panel_Control.TabIndex = 11;
+            // 
+            // List_Flight
+            // 
+            this.List_Flight.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListHead_FlightNo,
+            this.ListHead_Date,
+            this.ListHead_Bags});
+            this.List_Flight.FullRowSelect = true;
+            this.List_Flight.GridLines = true;
+            this.List_Flight.HideSelection = false;
+            this.List_Flight.Location = new System.Drawing.Point(7, 35);
+            this.List_Flight.Name = "List_Flight";
+            this.List_Flight.Size = new System.Drawing.Size(222, 276);
+            this.List_Flight.TabIndex = 1;
+            this.List_Flight.UseCompatibleStateImageBehavior = false;
+            this.List_Flight.View = System.Windows.Forms.View.Details;
+            this.List_Flight.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.List_Flight_SlcChg);
+            // 
+            // ListHead_FlightNo
+            // 
+            this.ListHead_FlightNo.Text = "FLIGHT_NO";
+            this.ListHead_FlightNo.Width = 80;
+            // 
+            // ListHead_Date
+            // 
+            this.ListHead_Date.Text = "DATE";
+            this.ListHead_Date.Width = 70;
+            // 
+            // ListHead_Bags
+            // 
+            this.ListHead_Bags.Text = "BAGS";
+            this.ListHead_Bags.Width = 50;
+            // 
+            // Main_ToolStrip
+            // 
+            this.Main_ToolStrip.AutoSize = false;
+            this.Main_ToolStrip.ImageScalingSize = new System.Drawing.Size(25, 25);
+            this.Main_ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Button_AddFlight,
+            this.Button_AddBag,
+            this.toolStripSeparator1,
+            this.Button_Undo,
+            this.Button_Redo,
+            this.Button_Reload,
+            this.toolStripSeparator2,
+            this.Button_Reset,
+            this.Button_Delete});
+            this.Main_ToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.Main_ToolStrip.Name = "Main_ToolStrip";
+            this.Main_ToolStrip.Size = new System.Drawing.Size(244, 32);
+            this.Main_ToolStrip.TabIndex = 0;
+            this.Main_ToolStrip.Text = "toolStrip1";
+            // 
+            // Button_AddFlight
+            // 
+            this.Button_AddFlight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_AddFlight.Image = ((System.Drawing.Image)(resources.GetObject("Button_AddFlight.Image")));
+            this.Button_AddFlight.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_AddFlight.Name = "Button_AddFlight";
+            this.Button_AddFlight.Size = new System.Drawing.Size(29, 29);
+            this.Button_AddFlight.Text = "Add Flight Data";
+            this.Button_AddFlight.Click += new System.EventHandler(this.Button_AddFlight_Click);
+            // 
+            // Button_AddBag
+            // 
+            this.Button_AddBag.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_AddBag.Enabled = false;
+            this.Button_AddBag.Image = ((System.Drawing.Image)(resources.GetObject("Button_AddBag.Image")));
+            this.Button_AddBag.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_AddBag.Name = "Button_AddBag";
+            this.Button_AddBag.Size = new System.Drawing.Size(29, 29);
+            this.Button_AddBag.Text = "Add Baggage Data";
+            this.Button_AddBag.Click += new System.EventHandler(this.Button_AddBag_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
+            // 
+            // Button_Undo
+            // 
+            this.Button_Undo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_Undo.Enabled = false;
+            this.Button_Undo.Image = ((System.Drawing.Image)(resources.GetObject("Button_Undo.Image")));
+            this.Button_Undo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_Undo.Name = "Button_Undo";
+            this.Button_Undo.Size = new System.Drawing.Size(29, 29);
+            this.Button_Undo.Text = "Undo";
+            // 
+            // Button_Redo
+            // 
+            this.Button_Redo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_Redo.Enabled = false;
+            this.Button_Redo.Image = ((System.Drawing.Image)(resources.GetObject("Button_Redo.Image")));
+            this.Button_Redo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_Redo.Name = "Button_Redo";
+            this.Button_Redo.Size = new System.Drawing.Size(29, 29);
+            this.Button_Redo.Text = "Redo";
+            // 
+            // Button_Reload
+            // 
+            this.Button_Reload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_Reload.Image = ((System.Drawing.Image)(resources.GetObject("Button_Reload.Image")));
+            this.Button_Reload.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_Reload.Name = "Button_Reload";
+            this.Button_Reload.Size = new System.Drawing.Size(29, 29);
+            this.Button_Reload.Text = "Reload Data";
+            this.Button_Reload.Click += new System.EventHandler(this.Button_Reload_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
+            // 
+            // Button_Reset
+            // 
+            this.Button_Reset.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_Reset.Enabled = false;
+            this.Button_Reset.Image = ((System.Drawing.Image)(resources.GetObject("Button_Reset.Image")));
+            this.Button_Reset.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_Reset.Name = "Button_Reset";
+            this.Button_Reset.Size = new System.Drawing.Size(29, 29);
+            this.Button_Reset.Text = "Reset Selected Data";
+            this.Button_Reset.Click += new System.EventHandler(this.Button_Reset_Click);
+            // 
+            // Button_Delete
+            // 
+            this.Button_Delete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Button_Delete.Enabled = false;
+            this.Button_Delete.Image = ((System.Drawing.Image)(resources.GetObject("Button_Delete.Image")));
+            this.Button_Delete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button_Delete.Name = "Button_Delete";
+            this.Button_Delete.Size = new System.Drawing.Size(29, 29);
+            this.Button_Delete.Text = "Delete Selected Data";
+            this.Button_Delete.Click += new System.EventHandler(this.Button_Delete_Click);
+            // 
+            // Group_Control
+            // 
+            this.Group_Control.Controls.Add(this.Panel_Control);
+            this.Group_Control.Location = new System.Drawing.Point(12, 12);
+            this.Group_Control.Name = "Group_Control";
+            this.Group_Control.Size = new System.Drawing.Size(244, 339);
+            this.Group_Control.TabIndex = 12;
+            this.Group_Control.TabStop = false;
+            this.Group_Control.Text = "Control Panel";
+            // 
+            // Group_Property
+            // 
+            this.Group_Property.Controls.Add(this.List_Properties);
+            this.Group_Property.Controls.Add(this.Label_FlightProp);
+            this.Group_Property.Location = new System.Drawing.Point(12, 358);
+            this.Group_Property.Name = "Group_Property";
+            this.Group_Property.Size = new System.Drawing.Size(244, 201);
+            this.Group_Property.TabIndex = 13;
+            this.Group_Property.TabStop = false;
+            this.Group_Property.Text = "Properties";
+            // 
+            // List_Properties
+            // 
+            this.List_Properties.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.List_Properties.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListHead_Name_Prop,
+            this.ListHead_Value_Prop});
+            this.List_Properties.Enabled = false;
+            this.List_Properties.FullRowSelect = true;
+            this.List_Properties.HideSelection = false;
+            this.List_Properties.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5});
+            this.List_Properties.Location = new System.Drawing.Point(7, 38);
+            this.List_Properties.Name = "List_Properties";
+            this.List_Properties.Size = new System.Drawing.Size(222, 157);
+            this.List_Properties.TabIndex = 1;
+            this.List_Properties.UseCompatibleStateImageBehavior = false;
+            this.List_Properties.View = System.Windows.Forms.View.Details;
+            // 
+            // ListHead_Name_Prop
+            // 
+            this.ListHead_Name_Prop.Text = "Name";
+            this.ListHead_Name_Prop.Width = 100;
+            // 
+            // ListHead_Value_Prop
+            // 
+            this.ListHead_Value_Prop.Text = "Value";
+            this.ListHead_Value_Prop.Width = 100;
+            // 
+            // Label_FlightProp
+            // 
+            this.Label_FlightProp.AutoSize = true;
+            this.Label_FlightProp.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_FlightProp.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Label_FlightProp.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Label_FlightProp.Location = new System.Drawing.Point(6, 18);
+            this.Label_FlightProp.Name = "Label_FlightProp";
+            this.Label_FlightProp.Size = new System.Drawing.Size(223, 16);
+            this.Label_FlightProp.TabIndex = 0;
+            this.Label_FlightProp.Text = "Detailed properties of a selected flight";
+            // 
+            // List_Baggage
+            // 
+            this.List_Baggage.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.List_Baggage.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListHead_BagTag,
+            this.ListHead_BsmDate,
+            this.ListHead_BsmFlight,
+            this.ListHead_BagState,
+            this.ListHead_CabinClass,
+            this.ListHead_AuthLoad,
+            this.ListHead_AuthTransport});
+            this.List_Baggage.FullRowSelect = true;
+            this.List_Baggage.GridLines = true;
+            this.List_Baggage.HideSelection = false;
+            this.List_Baggage.Location = new System.Drawing.Point(0, 0);
+            this.List_Baggage.Name = "List_Baggage";
+            this.List_Baggage.Size = new System.Drawing.Size(688, 537);
+            this.List_Baggage.TabIndex = 14;
+            this.List_Baggage.UseCompatibleStateImageBehavior = false;
+            this.List_Baggage.View = System.Windows.Forms.View.Details;
+            this.List_Baggage.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.List_Baggage_SlcChg);
+            this.List_Baggage.Leave += new System.EventHandler(this.List_Baggage_LostFocus);
+            this.List_Baggage.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.List_Baggage_MouseDoubleClick);
+            // 
+            // ListHead_BagTag
+            // 
+            this.ListHead_BagTag.Text = "BAG_TAG";
+            this.ListHead_BagTag.Width = 100;
+            // 
+            // ListHead_BsmDate
+            // 
+            this.ListHead_BsmDate.Text = "DATE";
+            this.ListHead_BsmDate.Width = 80;
+            // 
+            // ListHead_BsmFlight
+            // 
+            this.ListHead_BsmFlight.Text = "FLIGHT_NO";
+            this.ListHead_BsmFlight.Width = 100;
+            // 
+            // ListHead_BagState
+            // 
+            this.ListHead_BagState.Text = "BAG_STATE";
+            this.ListHead_BagState.Width = 80;
+            // 
+            // ListHead_CabinClass
+            // 
+            this.ListHead_CabinClass.Text = "CABIN_CLASS";
+            this.ListHead_CabinClass.Width = 90;
+            // 
+            // ListHead_AuthLoad
+            // 
+            this.ListHead_AuthLoad.Text = "AUTH_LOAD";
+            this.ListHead_AuthLoad.Width = 90;
+            // 
+            // ListHead_AuthTransport
+            // 
+            this.ListHead_AuthTransport.Text = "AUTH_TRANSPORT";
+            this.ListHead_AuthTransport.Width = 130;
+            // 
+            // Panel_ShowList
+            // 
+            this.Panel_ShowList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Panel_ShowList.Controls.Add(this.Text_BagAmend);
+            this.Panel_ShowList.Controls.Add(this.List_Baggage);
+            this.Panel_ShowList.Location = new System.Drawing.Point(259, 20);
+            this.Panel_ShowList.Name = "Panel_ShowList";
+            this.Panel_ShowList.Size = new System.Drawing.Size(690, 539);
+            this.Panel_ShowList.TabIndex = 15;
+            // 
+            // Text_BagAmend
+            // 
+            this.Text_BagAmend.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Text_BagAmend.Location = new System.Drawing.Point(204, 37);
+            this.Text_BagAmend.Name = "Text_BagAmend";
+            this.Text_BagAmend.Size = new System.Drawing.Size(100, 23);
+            this.Text_BagAmend.TabIndex = 15;
+            this.Text_BagAmend.Visible = false;
+            this.Text_BagAmend.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Text_BagAmend_Enter);
+            this.Text_BagAmend.Leave += new System.EventHandler(this.Text_BagAmend_LoseFocus);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 450);
-            this.Controls.Add(this.text_USER);
-            this.Controls.Add(this.groupBSM);
-            this.Controls.Add(this.groupFIDS);
+            this.ClientSize = new System.Drawing.Size(961, 571);
+            this.Controls.Add(this.Panel_ShowList);
+            this.Controls.Add(this.Group_Property);
+            this.Controls.Add(this.Group_Control);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "BRS Test Data Generator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.groupFIDS.ResumeLayout(false);
-            this.panelFIDS.ResumeLayout(false);
-            this.panelFIDS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridFLT)).EndInit();
-            this.groupBSM.ResumeLayout(false);
-            this.panelBSM.ResumeLayout(false);
-            this.panelBSM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridBSM)).EndInit();
+            this.Panel_Control.ResumeLayout(false);
+            this.Main_ToolStrip.ResumeLayout(false);
+            this.Main_ToolStrip.PerformLayout();
+            this.Group_Control.ResumeLayout(false);
+            this.Group_Property.ResumeLayout(false);
+            this.Group_Property.PerformLayout();
+            this.Panel_ShowList.ResumeLayout(false);
+            this.Panel_ShowList.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupFIDS;
-        private System.Windows.Forms.Panel panelFIDS;
-        private System.Windows.Forms.GroupBox groupBSM;
-        private System.Windows.Forms.Panel panelBSM;
-        private System.Windows.Forms.Button button_Clear_FIDS;
-        private System.Windows.Forms.Button button_Confirm_FIDS;
-        private System.Windows.Forms.TextBox text_DES_FIDS;
-        private System.Windows.Forms.Label labelDES;
-        private System.Windows.Forms.Label labelETD;
-        private System.Windows.Forms.TextBox text_ETD_FIDS;
-        private System.Windows.Forms.Label labelSTD;
-        private System.Windows.Forms.TextBox text_STD_FIDS;
-        private System.Windows.Forms.Label labelFlight;
-        private System.Windows.Forms.Button button_CONFIRM_BSM;
-        private System.Windows.Forms.Button button_CLEAR_BSM;
-        private System.Windows.Forms.TextBox text_Number_BSM;
-        private System.Windows.Forms.Label labelDataNumber;
-        private System.Windows.Forms.DataGridView dataGridFLT;
-        private System.Windows.Forms.DataGridView dataGridBSM;
-        private System.Windows.Forms.TextBox text_USER;
-        private System.Windows.Forms.TextBox text_BagState_BSM;
-        private System.Windows.Forms.Label labelBagState;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FLIGHT_NO_C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DATE_C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STD_C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ETD_C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DES_C;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BAG_TAG_B;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BSM_DATE_B;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FLIGHT_NO_B;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BAG_STATE_B;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CABIN_CLASS_B;
-        private System.Windows.Forms.TextBox text_CabinClass_BSM;
-        private System.Windows.Forms.Label labelCabinClass;
+        private System.Windows.Forms.Panel Panel_Control;
+        private System.Windows.Forms.ToolStrip Main_ToolStrip;
+        private System.Windows.Forms.ToolStripButton Button_AddFlight;
+        private System.Windows.Forms.ToolStripButton Button_AddBag;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton Button_Undo;
+        private System.Windows.Forms.ToolStripButton Button_Redo;
+        private System.Windows.Forms.ToolStripButton Button_Reload;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton Button_Reset;
+        private System.Windows.Forms.ToolStripButton Button_Delete;
+        private System.Windows.Forms.GroupBox Group_Control;
+        private System.Windows.Forms.GroupBox Group_Property;
+        private System.Windows.Forms.Label Label_FlightProp;
+        private System.Windows.Forms.ListView List_Flight;
+        private System.Windows.Forms.ColumnHeader ListHead_FlightNo;
+        private System.Windows.Forms.ColumnHeader ListHead_Date;
+        private System.Windows.Forms.ColumnHeader ListHead_Bags;
+        private System.Windows.Forms.ListView List_Properties;
+        private System.Windows.Forms.ColumnHeader ListHead_Name_Prop;
+        private System.Windows.Forms.ColumnHeader ListHead_Value_Prop;
+        private System.Windows.Forms.ListView List_Baggage;
+        private System.Windows.Forms.ColumnHeader ListHead_BagTag;
+        private System.Windows.Forms.ColumnHeader ListHead_BsmDate;
+        private System.Windows.Forms.ColumnHeader ListHead_BsmFlight;
+        private System.Windows.Forms.ColumnHeader ListHead_BagState;
+        private System.Windows.Forms.ColumnHeader ListHead_CabinClass;
+        private System.Windows.Forms.Panel Panel_ShowList;
+        private System.Windows.Forms.ColumnHeader ListHead_AuthLoad;
+        private System.Windows.Forms.ColumnHeader ListHead_AuthTransport;
+        private System.Windows.Forms.TextBox Text_BagAmend;
     }
 }
 

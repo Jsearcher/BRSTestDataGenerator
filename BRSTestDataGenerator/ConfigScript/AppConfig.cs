@@ -28,6 +28,18 @@ namespace BRSTestDataGenerator.ConfigScript
             /// 基本組態設定成員集合名稱
             /// </summary>
             public const string BasicCollection = "Basic";
+            /// <summary>
+            /// 預設參數值組態設定成員集合名稱
+            /// </summary>
+            public const string DefaultCollection = "Default";
+            /// <summary>
+            /// 回復步驟記錄列表組態設定成員集合名稱
+            /// </summary>
+            public const string UndoCollection = "Undo";
+            /// <summary>
+            /// 重複步驟記錄列表組態設定成員集合名稱
+            /// </summary>
+            public const string RedoCollection = "Redo";
             #endregion
 
             #region =====[Public] Collection Structor=====
@@ -43,6 +55,24 @@ namespace BRSTestDataGenerator.ConfigScript
             [ConfigurationProperty(BasicCollection, IsDefaultCollection = false)]
             [ConfigurationCollection(typeof(AppPropElement), AddItemName = "add", ClearItemsName = "clear", RemoveItemName = "remove")]
             public AppPropsCollection BasicPropCollection => (AppPropsCollection)this[BasicCollection];
+            /// <summary>
+            /// 預設參數值組態設定成員集合
+            /// </summary>
+            [ConfigurationProperty(DefaultCollection, IsDefaultCollection = false)]
+            [ConfigurationCollection(typeof(AppPropElement), AddItemName = "add", ClearItemsName = "clear", RemoveItemName = "remove")]
+            public AppPropsCollection DefaultPropCollection => (AppPropsCollection)this[DefaultCollection];
+            /// <summary>
+            /// 回復步驟記錄列表組態設定成員集合
+            /// </summary>
+            [ConfigurationProperty(UndoCollection, IsDefaultCollection = false)]
+            [ConfigurationCollection(typeof(AppPropElement), AddItemName = "add", ClearItemsName = "clear", RemoveItemName = "remove")]
+            public AppPropsCollection UndoPropCollection => (AppPropsCollection)this[UndoCollection];
+            /// <summary>
+            /// 重複步驟記錄列表組態設定成員集合
+            /// </summary>
+            [ConfigurationProperty(RedoCollection, IsDefaultCollection = false)]
+            [ConfigurationCollection(typeof(AppPropElement), AddItemName = "add", ClearItemsName = "clear", RemoveItemName = "remove")]
+            public AppPropsCollection RedoPropCollection => (AppPropsCollection)this[RedoCollection];
             #endregion
 
             #region =====[Public] Constructor & Destructor=====
@@ -54,6 +84,9 @@ namespace BRSTestDataGenerator.ConfigScript
                 AppPropElement appProp = new AppPropElement();
                 DBPropCollection.Add(appProp);
                 BasicPropCollection.Add(appProp);
+                DefaultPropCollection.Add(appProp);
+                UndoPropCollection.Add(appProp);
+                RedoPropCollection.Add(appProp);
             }
             #endregion
         }
@@ -145,9 +178,9 @@ namespace BRSTestDataGenerator.ConfigScript
             /// <summary>
             /// 新增特定型態之組態設定成員至組態設定集合
             /// </summary>
-            /// <param name="elememnt">特定型態之組態設定成員</param>
+            /// <param name="element">特定型態之組態設定成員</param>
             /// <param name="pCollectionName">特定組態設定成員集合之名稱</param>
-            public override void AddProperty(object elememnt, string pCollectionName)
+            public override void AddProperty(object element, string pCollectionName)
             {
                 try
                 {
@@ -163,10 +196,19 @@ namespace BRSTestDataGenerator.ConfigScript
                         switch (pCollectionName)
                         {
                             case AppPropSection.DBCollection:
-                                PropSection.DBPropCollection.Add((AppPropElement)elememnt);
+                                PropSection.DBPropCollection.Add((AppPropElement)element);
                                 break;
                             case AppPropSection.BasicCollection:
-                                PropSection.BasicPropCollection.Add((AppPropElement)elememnt);
+                                PropSection.BasicPropCollection.Add((AppPropElement)element);
+                                break;
+                            case AppPropSection.DefaultCollection:
+                                PropSection.DefaultPropCollection.Add((AppPropElement)element);
+                                break;
+                            case AppPropSection.UndoCollection:
+                                PropSection.UndoPropCollection.Add((AppPropElement)element);
+                                break;
+                            case AppPropSection.RedoCollection:
+                                PropSection.RedoPropCollection.Add((AppPropElement)element);
                                 break;
                             default:
                                 Console.WriteLine("The requested ConfigurationCollection name {0} is not found", pCollectionName);
@@ -206,7 +248,7 @@ namespace BRSTestDataGenerator.ConfigScript
 
                     if (PropSection != null)
                     {
-                        return PropSection.DBPropCollection.ContainsKey(key) || PropSection.BasicPropCollection.ContainsKey(key);
+                        return PropSection.DBPropCollection.ContainsKey(key) || PropSection.BasicPropCollection.ContainsKey(key) || PropSection.DefaultPropCollection.ContainsKey(key);
                     }
 
                     return false;
@@ -218,7 +260,7 @@ namespace BRSTestDataGenerator.ConfigScript
                 }
             }
             /// <summary>
-            /// 取得組態設定檔區段之內容中所有標簽名稱(key)
+            /// 取得組態設定檔區段之內容中所有標籤名稱(key)
             /// </summary>
             /// <returns>組態設定標籤清單</returns>
             public override List<string> GetAllPropertyNames()
@@ -236,6 +278,7 @@ namespace BRSTestDataGenerator.ConfigScript
                     {
                         propNameList.AddRange(PropSection.DBPropCollection.GetAllPropertyNames());
                         propNameList.AddRange(PropSection.BasicPropCollection.GetAllPropertyNames());
+                        propNameList.AddRange(PropSection.DefaultPropCollection.GetAllPropertyNames());
                     }
 
                     return propNameList;
@@ -243,6 +286,55 @@ namespace BRSTestDataGenerator.ConfigScript
                 catch (ConfigurationErrorsException ex)
                 {
                     ErrorLog.Log("GetAllPropertyNames", ex);
+                    throw ex;
+                }
+            }
+            /// <summary>
+            /// 依組態設定成員集合(Collection)取得組態設定檔區段之所有標籤名稱(key)
+            /// </summary>
+            /// <param name="pCollectionName">特定組態設定成員集合之名稱</param>
+            /// <returns>對應組態設定成員集合的組態設定標籤清單</returns>
+            public List<string> GetCollectionPropertyNames(string pCollectionName)
+            {
+                List<string> propNameList = new List<string>();
+
+                try
+                {
+                    // Get the application configuration file.
+                    GetConfigurationFile();
+                    // Read and display the custom section.
+                    GetPropSection();
+
+                    if (PropSection != null)
+                    {
+                        switch (pCollectionName)
+                        {
+                            case AppPropSection.DBCollection:
+                                propNameList = PropSection.DBPropCollection.GetAllPropertyNames();
+                                break;
+                            case AppPropSection.BasicCollection:
+                                propNameList = PropSection.BasicPropCollection.GetAllPropertyNames();
+                                break;
+                            case AppPropSection.DefaultCollection:
+                                propNameList = PropSection.DefaultPropCollection.GetAllPropertyNames();
+                                break;
+                            case AppPropSection.UndoCollection:
+                                propNameList = PropSection.UndoPropCollection.GetAllPropertyNames();
+                                break;
+                            case AppPropSection.RedoCollection:
+                                propNameList = PropSection.RedoPropCollection.GetAllPropertyNames();
+                                break;
+                            default:
+                                Console.WriteLine("The requested ConfigurationCollection name {0} is not found", pCollectionName);
+                                break;
+                        }
+                    }
+
+                    return propNameList;
+                }
+                catch (ConfigurationErrorsException ex)
+                {
+                    ErrorLog.Log("GetCollectionProperty", ex);
                     throw ex;
                 }
             }
@@ -271,6 +363,10 @@ namespace BRSTestDataGenerator.ConfigScript
                         else if (PropSection.BasicPropCollection[key] != null)
                         {
                             ret = PropSection.BasicPropCollection[key].Value;
+                        }
+                        else if (PropSection.DefaultPropCollection[key] != null)
+                        {
+                            ret = PropSection.DefaultPropCollection[key].Value;
                         }
                     }
 
@@ -305,6 +401,10 @@ namespace BRSTestDataGenerator.ConfigScript
                         else if (PropSection.BasicPropCollection[key] != null)
                         {
                             PropSection.BasicPropCollection[key].Value = value;
+                        }
+                        else if (PropSection.DefaultPropCollection[key] != null)
+                        {
+                            PropSection.DefaultPropCollection[key].Value = value;
                         }
                     }
 
@@ -347,6 +447,9 @@ namespace BRSTestDataGenerator.ConfigScript
                     {
                         PropSection.DBPropCollection.Clear();
                         PropSection.BasicPropCollection.Clear();
+                        PropSection.DefaultPropCollection.Clear();
+                        PropSection.UndoPropCollection.Clear();
+                        PropSection.RedoPropCollection.Clear();
 
                         // Save the application configuration file.
                         PropSection.SectionInformation.ForceSave = true;
@@ -390,6 +493,15 @@ namespace BRSTestDataGenerator.ConfigScript
                                 break;
                             case AppPropSection.BasicCollection:
                                 PropSection.BasicPropCollection.Remove(PropSection.BasicPropCollection[key]);
+                                break;
+                            case AppPropSection.DefaultCollection:
+                                PropSection.DefaultPropCollection.Remove(PropSection.DefaultPropCollection[key]);
+                                break;
+                            case AppPropSection.UndoCollection:
+                                PropSection.UndoPropCollection.Remove(PropSection.UndoPropCollection[key]);
+                                break;
+                            case AppPropSection.RedoCollection:
+                                PropSection.RedoPropCollection.Remove(PropSection.RedoPropCollection[key]);
                                 break;
                             default:
                                 InfoLog.Log(string.Empty, "AppConfig", string.Format("The requested ConfigurationCollection name {0} is not found", pCollectionName));
@@ -444,6 +556,18 @@ namespace BRSTestDataGenerator.ConfigScript
                         if (PropSection.BasicPropCollection.Count == 0)
                         {
                             PropSection.BasicPropCollection.Add(new AppPropElement());
+                        }
+                        if (PropSection.DefaultPropCollection.Count == 0)
+                        {
+                            PropSection.DefaultPropCollection.Add(new AppPropElement());
+                        }
+                        if (PropSection.UndoPropCollection.Count == 0)
+                        {
+                            PropSection.UndoPropCollection.Add(new AppPropElement());
+                        }
+                        if (PropSection.RedoPropCollection.Count == 0)
+                        {
+                            PropSection.RedoPropCollection.Add(new AppPropElement());
                         }
                     }
 

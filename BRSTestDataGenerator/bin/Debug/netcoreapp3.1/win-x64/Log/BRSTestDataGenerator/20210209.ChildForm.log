@@ -1,0 +1,15 @@
+11:14:06.191 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:14:11.553 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:14:12.442 INFO  - Sure to complete this BSM amendment.
+11:14:20.219 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:14:23.646 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:14:24.396 INFO  - Sure to complete this BSM amendment.
+11:14:29.790 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:14:39.100 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:14:39.790 INFO  - Sure to complete this FIDS amendment.
+11:14:39.798 INFO  - Start to add a new FIDS test data: XX0004.
+11:14:40.588 INFO  - Add new test data of flight: XX0004 successfully
+11:14:57.027 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:15:05.220 INFO  - Inputs in BSM panel are not completed.
+11:15:06.992 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:15:07.645 INFO  - Sure to complete this BSM amendment.

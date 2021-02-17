@@ -1,0 +1,148 @@
+10:10:36.929 INFO  - MainForm of [BRS Test Data Generator] initialized.
+10:10:54.105 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+10:17:21.438 INFO  - MainForm of [BRS Test Data Generator] initialized.
+10:18:45.668 INFO  - MainForm of [BRS Test Data Generator] initialized.
+10:19:17.234 INFO  - MainForm of [BRS Test Data Generator] Closed.
+10:21:52.357 INFO  - MainForm of [BRS Test Data Generator] initialized.
+10:21:57.413 INFO  - MainForm of [BRS Test Data Generator] Closed.
+10:24:07.816 INFO  - MainForm of [BRS Test Data Generator] initialized.
+10:24:39.496 INFO  - Query FIDS data successfully.
+10:24:39.525 INFO  - Query BSM data successfully.
+10:24:42.444 INFO  - MainForm of [BRS Test Data Generator] Closed.
+11:13:38.521 INFO  - MainForm of [BRS Test Data Generator] initialized.
+11:13:39.571 INFO  - Query FIDS data successfully.
+11:13:39.599 INFO  - Query BSM data successfully.
+11:13:55.983 INFO  - Query FIDS data of [XX0001] successfully.
+11:13:56.019 INFO  - Query BSM data successfully.
+11:13:58.324 INFO  - Query FIDS data of [XX0002] successfully.
+11:13:58.338 INFO  - There is non of current BSM data of selected flight to query.
+11:13:58.842 INFO  - Query FIDS data of [XX0003] successfully.
+11:13:58.853 INFO  - There is non of current BSM data of selected flight to query.
+11:13:59.166 INFO  - Query FIDS data of [XX0002] successfully.
+11:13:59.185 INFO  - There is non of current BSM data of selected flight to query.
+11:13:59.433 INFO  - Query FIDS data of [XX0001] successfully.
+11:13:59.485 INFO  - Query BSM data successfully.
+11:14:01.575 INFO  - Double confirm whether to complete this BSM deletion or not.
+11:14:02.742 INFO  - Sure to complete this BSM deletion.
+11:14:02.773 INFO  - Start to delete selected BSM test data.
+11:14:03.781 INFO  - Delete all test data of BSM successfully.
+11:14:03.789 INFO  - The selected BSM test data: 7890000001 has been deleted.
+11:14:03.801 INFO  - Query FIDS data successfully.
+11:14:03.812 INFO  - Query BSM data successfully.
+11:14:05.006 INFO  - Query FIDS data of [XX0001] successfully.
+11:14:05.023 INFO  - Query BSM data successfully.
+11:14:12.451 INFO  - Start to add 1 new BSM test data for [XX0001].
+11:14:12.920 INFO  - Add 1 new test data of BSM (BSM_FLIGHT: XX0001, BAG_STATE: 0) successfully
+11:14:13.284 INFO  - Query BSM data successfully.
+11:14:16.553 INFO  - Double confirm whether to complete this BSM deletion or not.
+11:14:17.472 INFO  - Sure to complete this BSM deletion.
+11:14:17.486 INFO  - Start to delete selected BSM test data.
+11:14:18.038 INFO  - Delete all test data of BSM successfully.
+11:14:18.047 INFO  - The selected BSM test data: 7890000002 has been deleted.
+11:14:18.059 INFO  - Query FIDS data successfully.
+11:14:18.072 INFO  - Query BSM data successfully.
+11:14:18.081 INFO  - Start to delete selected BSM test data.
+11:14:18.113 INFO  - Delete all test data of BSM successfully.
+11:14:18.121 INFO  - The selected BSM test data: 7890000003 has been deleted.
+11:14:18.136 INFO  - Query FIDS data successfully.
+11:14:18.148 INFO  - Query BSM data successfully.
+11:14:18.155 INFO  - Start to delete selected BSM test data.
+11:14:18.188 INFO  - Delete all test data of BSM successfully.
+11:14:18.195 INFO  - The selected BSM test data: 7890000004 has been deleted.
+11:14:18.205 INFO  - Query FIDS data successfully.
+11:14:18.216 INFO  - Query BSM data successfully.
+11:14:18.223 INFO  - Start to delete selected BSM test data.
+11:14:18.255 INFO  - Delete all test data of BSM successfully.
+11:14:18.263 INFO  - The selected BSM test data: 7890000005 has been deleted.
+11:14:18.277 INFO  - Query FIDS data successfully.
+11:14:18.289 INFO  - Query BSM data successfully.
+11:14:18.298 INFO  - Start to delete selected BSM test data.
+11:14:18.363 INFO  - Delete all test data of BSM successfully.
+11:14:18.372 INFO  - The selected BSM test data: 7890000006 has been deleted.
+11:14:18.384 INFO  - Query FIDS data successfully.
+11:14:18.395 INFO  - There is non of current BSM data to query.
+11:14:18.950 INFO  - Query FIDS data of [XX0001] successfully.
+11:14:18.992 INFO  - There is non of current BSM data of selected flight to query.
+11:14:24.416 INFO  - Start to add 5 new BSM test data for [XX0001].
+11:14:24.897 INFO  - Add 5 new test data of BSM (BSM_FLIGHT: XX0001, BAG_STATE: 0) successfully
+11:14:24.920 INFO  - Query BSM data successfully.
+11:14:40.617 INFO  - Query FIDS data successfully.
+11:14:40.630 INFO  - Query BSM data successfully.
+11:14:42.250 INFO  - Query FIDS data of [XX0004] successfully.
+11:14:42.287 INFO  - There is non of current BSM data of selected flight to query.
+11:14:44.010 INFO  - Query FIDS data of [XX0003] successfully.
+11:14:44.024 INFO  - There is non of current BSM data of selected flight to query.
+11:14:44.380 INFO  - Query FIDS data of [XX0001] successfully.
+11:14:44.398 INFO  - Query BSM data successfully.
+11:14:45.293 INFO  - Query FIDS data of [XX0002] successfully.
+11:14:45.311 INFO  - There is non of current BSM data of selected flight to query.
+11:14:45.577 INFO  - Query FIDS data of [XX0003] successfully.
+11:14:45.602 INFO  - There is non of current BSM data of selected flight to query.
+11:14:45.829 INFO  - Query FIDS data of [XX0004] successfully.
+11:14:45.863 INFO  - There is non of current BSM data of selected flight to query.
+11:14:46.142 INFO  - Query FIDS data of [XX0001] successfully.
+11:14:46.164 INFO  - Query BSM data successfully.
+11:14:48.442 INFO  - Query FIDS data of [XX0004] successfully.
+11:14:48.455 INFO  - There is non of current BSM data of selected flight to query.
+11:14:50.412 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:14:51.553 INFO  - Sure to complete this FIDS deletion.
+11:14:51.563 INFO  - Start to delete selected FIDS test data.
+11:14:51.621 INFO  - Delete a test data of flight: XX0004 successfully.
+11:14:51.630 INFO  - The selected FIDS test data: XX0004 has been deleted.
+11:14:51.643 INFO  - Query FIDS data successfully.
+11:14:51.655 INFO  - Query BSM data successfully.
+11:14:52.862 INFO  - Query FIDS data of [XX0001] successfully.
+11:14:52.892 INFO  - Query BSM data successfully.
+11:14:56.150 INFO  - Query FIDS data of [XX0002] successfully.
+11:14:56.163 INFO  - There is non of current BSM data of selected flight to query.
+11:15:07.656 INFO  - Start to add 3 new BSM test data for [XX0002].
+11:15:07.749 INFO  - Add 3 new test data of BSM (BSM_FLIGHT: XX0002, BAG_STATE: 0) successfully
+11:15:07.762 INFO  - Query BSM data successfully.
+11:15:10.874 INFO  - Double confirm whether to complete this BSM deletion or not.
+11:15:11.637 INFO  - Sure to complete this BSM deletion.
+11:15:11.646 INFO  - Start to delete selected BSM test data.
+11:15:12.329 INFO  - Delete all test data of BSM successfully.
+11:15:12.343 INFO  - The selected BSM test data: 7890000006 has been deleted.
+11:15:12.359 INFO  - Query FIDS data successfully.
+11:15:12.372 INFO  - Query BSM data successfully.
+11:15:14.239 INFO  - Query FIDS data of [XX0002] successfully.
+11:15:14.256 INFO  - Query BSM data successfully.
+11:15:15.216 INFO  - Query FIDS data of [XX0001] successfully.
+11:15:15.230 INFO  - Query BSM data successfully.
+11:15:17.382 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+11:15:17.397 INFO  - Query FIDS data successfully.
+11:15:17.411 INFO  - Query BSM data successfully.
+11:15:19.438 INFO  - Query FIDS data of [XX0002] successfully.
+11:15:19.472 INFO  - Query BSM data successfully.
+11:15:30.531 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:15:31.623 INFO  - Sure to complete this BSM amendment.
+11:15:31.638 INFO  - Query BSM data successfully.
+11:15:31.696 INFO  - Amend a test data of BSM (BAG_TAG: 7890000007, BSM_DATE: 20210203) successfully
+11:15:31.709 INFO  - Query BSM data successfully.
+11:15:35.014 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:15:36.015 INFO  - Sure to complete this BSM amendment.
+11:15:36.029 INFO  - Query BSM data successfully.
+11:15:36.883 INFO  - Amend a test data of BSM (BAG_TAG: 7890000007, BSM_DATE: 20210203) successfully
+11:15:36.896 INFO  - Query BSM data successfully.
+11:15:38.679 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:15:39.616 INFO  - Sure to complete this BSM amendment.
+11:15:39.634 INFO  - Query BSM data successfully.
+11:15:39.692 INFO  - Amend a test data of BSM (BAG_TAG: 7890000007, BSM_DATE: 20210203) successfully
+11:15:39.707 INFO  - Query BSM data successfully.
+11:15:45.008 INFO  - Double confirm whether to complete this FIDS deletion or not.
+11:15:46.277 INFO  - Sure to complete this BSM data reset.
+11:15:46.293 INFO  - Query BSM data successfully.
+11:15:46.396 INFO  - Amend a test data of BSM (BAG_TAG: 7890000007, BSM_DATE: 20210203) successfully
+11:15:46.408 INFO  - Query BSM data successfully.
+11:16:02.390 INFO  - Reload FIDS and BSM data and refresh to be initialized state.
+11:16:02.435 INFO  - Query FIDS data successfully.
+11:16:02.452 INFO  - Query BSM data successfully.
+11:17:35.984 INFO  - MainForm of [BRS Test Data Generator] Closed.
+11:24:39.094 INFO  - MainForm of [BRS Test Data Generator] initialized.
+11:24:40.047 INFO  - Query FIDS data successfully.
+11:24:40.072 INFO  - Query BSM data successfully.
+11:24:48.961 INFO  - MainForm of [BRS Test Data Generator] Closed.
+14:20:00.797 INFO  - MainForm of [BRS Test Data Generator] initialized.
+14:23:28.713 INFO  - MainForm of [BRS Test Data Generator] initialized.
+14:36:06.358 INFO  - MainForm of [BRS Test Data Generator] initialized.
+14:36:06.547 INFO  - D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\bin\Debug\netcoreapp3.1\win-x64\appsettings.json

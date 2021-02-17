@@ -1,0 +1,26 @@
+14:16:09.735 ERROR - The type initializer for 'LazyHolder' threw an exception.    at BRSTestDataGenerator.ConfigScript.AppJsonConfig.AppPropertySetting.Instance() in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppJsonConfig.cs:line 263
+Could not parse the JSON file.    at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.HandleException(ExceptionDispatchInfo info)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+   at Microsoft.Extensions.Configuration.FileConfigurationProvider.Load()
+   at Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+   at Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+   at Lib.Misc.Property.JsonPropertyBase.PropertySetting`2.GetConfigurationFile()
+   at Lib.Misc.Property.JsonPropertyBase.PropertySetting`2..ctor(String pSectionPath, String pConfigPath)
+   at BRSTestDataGenerator.ConfigScript.AppJsonConfig.AppPropertySetting..ctor(String pSectionPath, String pConfigPath) in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppJsonConfig.cs:line 249
+   at BRSTestDataGenerator.ConfigScript.AppJsonConfig.AppPropertySetting.LazyHolder..cctor() in D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\ConfigScript\AppJsonConfig.cs:line 224
+'M' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.    at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonDocument.Parse(ReadOnlySpan`1 utf8JsonSpan, Utf8JsonReader reader, MetadataDb& database, StackRowStack& stack)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 utf8Json, JsonReaderOptions readerOptions, Byte[] extraRentedBytes)
+   at System.Text.Json.JsonDocument.Parse(ReadOnlyMemory`1 json, JsonDocumentOptions options)
+   at System.Text.Json.JsonDocument.Parse(String json, JsonDocumentOptions options)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.ParseStream(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationFileParser.Parse(Stream input)
+   at Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+

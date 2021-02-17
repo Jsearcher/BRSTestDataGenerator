@@ -1,0 +1,50 @@
+11:35:14.062 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:35:33.185 INFO  - Inputs in BSM panel are not completed.
+11:39:15.484 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:40:54.494 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:40:58.964 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:40:59.801 INFO  - Sure to complete this BSM amendment.
+11:41:10.641 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:41:22.492 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:41:27.517 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:41:28.300 INFO  - Sure to complete this FIDS amendment.
+11:41:28.331 INFO  - Start to add a new FIDS test data: XX0003.
+11:41:28.421 INFO  - Add new test data of flight: XX0003 successfully
+11:41:50.635 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:41:54.625 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:41:55.400 INFO  - Sure to complete this BSM amendment.
+11:42:04.040 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:42:05.067 INFO  - Sure to complete this BSM amendment.
+11:42:37.476 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+11:42:41.257 INFO  - Double confirm whether to complete this BSM amendment or not.
+11:42:42.067 INFO  - Sure to complete this BSM amendment.
+13:19:03.875 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:19:10.489 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:19:11.230 INFO  - Sure to complete this BSM amendment.
+13:19:51.603 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:19:56.482 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:19:57.127 INFO  - Sure to complete this BSM amendment.
+13:20:04.475 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:20:08.678 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:20:09.306 INFO  - Sure to complete this BSM amendment.
+13:25:04.932 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:25:09.485 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:25:10.262 INFO  - Sure to complete this BSM amendment.
+13:25:12.373 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:25:16.196 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:25:16.854 INFO  - Sure to complete this BSM amendment.
+13:25:29.928 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:25:36.538 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:25:37.389 INFO  - Sure to complete this BSM amendment.
+13:26:01.077 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+13:26:05.454 INFO  - Double confirm whether to complete this BSM amendment or not.
+13:26:06.044 INFO  - Sure to complete this BSM amendment.
+16:59:11.853 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+16:59:20.470 INFO  - Double confirm whether to complete this FIDS amendment or not.
+16:59:21.850 INFO  - Sure to complete this FIDS amendment.
+16:59:21.884 INFO  - Start to add a new FIDS test data: XX0001.
+16:59:21.959 INFO  - Add new test data of flight: XX0001 successfully
+16:59:39.963 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+17:00:09.206 INFO  - ChildForm_AddBag of [BRS Test Data Generator] initialized.
+17:00:23.810 INFO  - Double confirm whether to complete this BSM amendment or not.
+17:00:24.773 INFO  - Sure to complete this BSM amendment.

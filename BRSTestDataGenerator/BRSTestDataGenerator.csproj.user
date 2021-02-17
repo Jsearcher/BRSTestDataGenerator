@@ -5,6 +5,12 @@
     <_LastSelectedProfileId>D:\VS Code\Apps\BRSTestDataGenerator\BRSTestDataGenerator\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="ChildForm_AddBag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChildForm_AddFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

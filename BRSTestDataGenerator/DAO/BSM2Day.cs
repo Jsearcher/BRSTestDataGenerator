@@ -277,8 +277,27 @@ namespace BRSTestDataGenerator.DAO
                 DateTime.Now.ToString("yyyyMMdd") :
                 DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
             return SelectByCondition(string.Format(" WHERE {0} = '{1}' and {2} like 'XX%'" +
-                                                    " ORDER BY {3} desc",
+                                                    " ORDER BY {2} desc, {3} asc",
                                                     FieldName[2], pDate, FieldName[1], FieldName[0]));
+        }
+
+        /// <summary>
+        /// 依據[BSM_FLIGHT], [BSM_DATE]篩選[dbo.BSM_2DAY]資料表
+        /// </summary>
+        /// <param name="pFlightNo">行李所屬航班編號</param>
+        /// <param name="pDate">行李所屬航班之作業日期</param>
+        /// <returns>
+        /// <para> 0: 依條件搜尋的筆數</para>
+        /// <para>-1: 例外錯誤</para>
+        /// </returns>
+        public int SelectByFlight(string pFlightNo, string pDate)
+        {
+            pDate = string.IsNullOrEmpty(pDate) ?
+                DateTime.Now.ToString("yyyyMMdd") :
+                DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
+            return SelectByCondition(string.Format(" WHERE {0} = '{1}' and {2} = '{3}'" +
+                                                    " ORDER BY {2} desc, {4} asc",
+                                                    FieldName[2], pDate, FieldName[1], pFlightNo, FieldName[0]));
         }
 
         /// <summary>
@@ -297,7 +316,7 @@ namespace BRSTestDataGenerator.DAO
                 DateTime.Now.ToString("yyyyMMdd") :
                 DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
             return SelectByCondition(string.Format(" WHERE {0} = '{1}' and {2} = '{3}'" +
-                                                    " ORDER BY {0} desc",
+                                                    " ORDER BY {2} asc",
                                                     FieldName[2], pDate, FieldName[0], pBagTag));
         }
 
@@ -316,7 +335,7 @@ namespace BRSTestDataGenerator.DAO
             sql += ", " + FieldName[4] + " = '" + oRow.CABIN_CLASS + "'";
             sql += ", " + FieldName[5] + " = '" + oRow.PASSENGER + "'";
             sql += ", " + FieldName[6] + " = '" + oRow.SEAT + "'";
-            sql += ", " + FieldName[7] + " = " + oRow.AUTH_LOAD;
+            sql += ", " + FieldName[7] + " = '" + oRow.AUTH_LOAD + "'";
             sql += ", " + FieldName[8] + " = '" + oRow.AUTH_TRANSPORT + "'";
             sql += ", " + FieldName[9] + " = " + oRow.BSM_STATE;
             sql += ", " + FieldName[10] + " = '" + oRow.BAG_FLIGHT + "'";
@@ -354,6 +373,24 @@ namespace BRSTestDataGenerator.DAO
                 DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
             return DeleteByCondition(string.Format(" WHERE {0} = '{1}' and {2} like '7890%' and {3} like 'XX%'",
                                             FieldName[2], pDate, FieldName[0], FieldName[1]));
+        }
+
+        /// <summary>
+        /// 依據[BAG_TAG], [BSM_DATE]刪除[dbo.BSM_2DAY]資料表所有資料列
+        /// </summary>
+        /// <param name="pBagTag">行李條碼編號</param>
+        /// <param name="pDate">航班之作業日期(預設為系統時間之當日)</param>
+        /// <returns>
+        /// <para> 0: 依條件刪除的筆數</para>
+        /// <para>-1: 例外錯誤</para>
+        /// </returns>
+        public int DeleteByKey(string pBagTag, string pDate)
+        {
+            pDate = string.IsNullOrEmpty(pDate) ?
+                DateTime.Now.ToString("yyyyMMdd") :
+                DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
+            return DeleteByCondition(string.Format(" WHERE {0} = '{1}' and {2} = '{3}'",
+                                            FieldName[2], pDate, FieldName[0], pBagTag));
         }
 
         /// <summary>

@@ -1,0 +1,38 @@
+13:44:06.634 INFO  - MainForm of [BRS Test Data Generator] initialized.
+13:44:10.708 INFO  - There is non of current FIDS data to query.
+13:44:10.740 INFO  - There is non of current BSM data to query.
+13:45:06.201 INFO  - MainForm of [BRS Test Data Generator] initialized.
+13:45:07.511 INFO  - There is non of current FIDS data to query.
+13:45:07.535 INFO  - There is non of current BSM data to query.
+13:45:42.594 INFO  - MainForm of [BRS Test Data Generator] Closed.
+13:47:25.406 INFO  - MainForm of [BRS Test Data Generator] initialized.
+13:47:27.127 INFO  - There is non of current FIDS data to query.
+13:47:27.151 INFO  - There is non of current BSM data to query.
+13:47:40.121 INFO  - MainForm of [BRS Test Data Generator] Closed.
+13:53:28.793 INFO  - MainForm of [BRS Test Data Generator] initialized.
+13:53:34.016 INFO  - There is non of current FIDS data to query.
+13:53:34.055 INFO  - There is non of current BSM data to query.
+13:53:53.773 INFO  - MainForm of [BRS Test Data Generator] Closed.
+14:00:00.843 INFO  - MainForm of [BRS Test Data Generator] initialized.
+14:00:02.510 INFO  - There is non of current FIDS data to query.
+14:00:02.538 INFO  - There is non of current BSM data to query.
+14:00:17.481 INFO  - Double confirm whether to do this FIDS amendment or not.
+14:00:18.441 INFO  - Sure to do this FIDS amendment.
+14:00:18.452 INFO  - Start to add a new FIDS test data: XX0001.
+14:00:18.924 INFO  - Add new test data of flight: XX0001 successfully
+14:00:19.000 INFO  - Query FIDS data successfully.
+14:00:19.016 INFO  - There is non of current BSM data to query.
+14:00:29.667 INFO  - Double confirm whether to do this BSM amendment or not.
+14:00:30.405 INFO  - Sure to do this BSM amendment.
+14:00:30.416 INFO  - Start to add 1 new BSM test data.
+14:00:30.465 INFO  - Add 1 new test data of BSM (BSM_FLIGHT: XX0001, BAG_STATE: 0) successfully
+14:00:30.484 INFO  - Query FIDS data successfully.
+14:00:30.501 INFO  - Query BSM data successfully.
+14:00:34.689 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:04:40.196 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:04:49.684 INFO  - Query FIDS data successfully.
+15:04:49.724 INFO  - Query BSM data successfully.
+15:06:05.244 INFO  - MainForm of [BRS Test Data Generator] Closed.
+15:29:49.740 INFO  - MainForm of [BRS Test Data Generator] initialized.
+15:29:56.192 INFO  - Query FIDS data successfully.
+15:29:56.236 INFO  - Query BSM data successfully.

@@ -8,12 +8,12 @@
 	<PublishTrimmed>true</PublishTrimmed>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>ASI.ICT.BRSTestDataGenerator</AssemblyName>
-    <AssemblyVersion>1.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <AssemblyVersion>1.1</AssemblyVersion>
+    <FileVersion>1.1.0</FileVersion>
     <Authors>KaiJyun Huang</Authors>
     <Company>CTCI Advanced Systems Inc.</Company>
     <Product>BRS Test Data Generator</Product>
-    <Copyright>Copyright © CTCI Advanced Systems Inc. 2020</Copyright>
+    <Copyright>Copyright © CTCI Advanced Systems Inc. 2021</Copyright>
     <Description>This is a test data generator for BRS systems. Currently, this could generate or clear the FIDS data and BSM data semi-automatically by key-in some necessary inputs, and then modify the data in T1BRSDB database (table brsdba.FIDS_2Day and table brsdba.BSM_2Day).
 
 The version definition follows the "Semantic Versioning 2.0.0". The format of versioning is shown below
@@ -24,12 +24,50 @@ And the meaning of each indicator:
  - MINOR version when you add functionality in a backwards compatible manner, and
  - PATCH version when you make backwards compatible bug fixes.</Description>
     <ApplicationIcon>Ampeross-Ampola-Folder-data.ico</ApplicationIcon>
+    <Version>1.1.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ASI.ICT.Lib.DB" Version="1.0.0" />
     <PackageReference Include="ASI.ICT.Lib.Log" Version="1.0.2" />
     <PackageReference Include="ASI.ICT.Lib.Misc" Version="1.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="image\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

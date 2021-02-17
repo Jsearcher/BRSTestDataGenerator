@@ -254,7 +254,7 @@ namespace BRSTestDataGenerator.DAO
         }
 
         /// <summary>
-        /// 依據[FLIGHT_NO], [DATE_TIME]刪除[dbo.FIDS_2DAY]資料表所有資料列，[FLIGHT_NO]包含"XX"的航空公司代碼
+        /// 依據[FLIGHT_NO], [DATE_TIME]刪除[dbo.FIDS_2DAY]資料表所有資料列，其中[FLIGHT_NO]為指定包含"XX"的航空公司代碼
         /// </summary>
         /// <param name="pDate">航班之作業日期(預設為系統時間之當日)</param>
         /// <returns>
@@ -268,6 +268,24 @@ namespace BRSTestDataGenerator.DAO
                 DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
             return DeleteByCondition(string.Format(" WHERE {0} = '{1}' and {2} like 'XX%'",
                                             FieldName[1], pDate, FieldName[0]));
+        }
+
+        /// <summary>
+        /// 依據[FLIGHT_NO], [DATE_TIME]刪除[dbo.FIDS_2DAY]資料表所有資料列
+        /// </summary>
+        /// <param name="pFlightNo">航班編號</param>
+        /// <param name="pDate">航班之作業日期(預設為系統時間之當日)</param>
+        /// <returns>
+        /// <para> 0: 依條件刪除的筆數</para>
+        /// <para>-1: 例外錯誤</para>
+        /// </returns>
+        public int DeleteByKey(string pFlightNo, string pDate)
+        {
+            pDate = string.IsNullOrEmpty(pDate) ?
+                DateTime.Now.ToString("yyyyMMdd") :
+                DateTime.ParseExact(pDate, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("yyyyMMdd");
+            return DeleteByCondition(string.Format(" WHERE {0} = '{1}' and {2} = '{3}'",
+                                            FieldName[1], pDate, FieldName[0], pFlightNo));
         }
 
         /// <summary>

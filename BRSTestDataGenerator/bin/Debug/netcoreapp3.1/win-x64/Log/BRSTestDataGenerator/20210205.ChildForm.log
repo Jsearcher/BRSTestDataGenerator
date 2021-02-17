@@ -1,0 +1,26 @@
+11:36:41.255 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:36:55.967 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:36:56.634 INFO  - Sure to complete this FIDS amendment.
+11:36:56.663 INFO  - Start to add a new FIDS test data: XX0003.
+11:36:56.689 INFO  - Add new test data of flight: XX0003 successfully
+11:41:49.312 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:42:21.843 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:42:22.556 INFO  - Sure to complete this FIDS amendment.
+11:42:22.592 INFO  - Start to add a new FIDS test data: XX0001.
+11:42:22.626 INFO  - Add new test data of flight: XX0001 successfully
+11:43:17.417 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:43:22.632 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:43:23.638 INFO  - Sure to complete this FIDS amendment.
+11:43:23.665 INFO  - Start to add a new FIDS test data: XX0001.
+11:43:23.748 INFO  - Add new test data of flight: XX0001 successfully
+11:45:18.023 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:45:29.780 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:45:30.564 INFO  - Sure to complete this FIDS amendment.
+11:45:30.592 INFO  - Start to add a new FIDS test data: XX0002.
+11:45:30.618 INFO  - Add new test data of flight: XX0002 successfully
+11:45:32.527 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
+11:45:37.682 INFO  - Double confirm whether to complete this FIDS amendment or not.
+11:45:38.615 INFO  - Sure to complete this FIDS amendment.
+11:45:38.627 INFO  - Start to add a new FIDS test data: XX0003.
+11:45:38.668 INFO  - Add new test data of flight: XX0003 successfully
+16:50:54.062 INFO  - ChildForm_AddFlight of [BRS Test Data Generator] initialized.
